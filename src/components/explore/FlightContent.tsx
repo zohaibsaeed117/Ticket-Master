@@ -3,16 +3,15 @@ import InputGroup from "@/components/InputGroup"
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
-import Cities from "@/lib/Cities"
-import { IconTransitionTop, IconTransitionBottom, IconCalendarMonth, IconSearch, IconArrowRight } from "@tabler/icons-react"
-import { useState } from "react"
+import Airports from "@/data/airports.json"
+import { IconSearch, IconArrowRight, IconRectangleRoundedBottom } from "@tabler/icons-react"
+import { useEffect, useMemo, useState } from "react"
 import { toast } from "react-hot-toast"
 import { format } from "date-fns"
 import { Edit, ListFilter, PlaneLanding, PlaneTakeoff } from "lucide-react"
 import { Separator } from "../ui/separator"
-import { DetailCard } from "../Card"
-import Image from "next/image"
-import { Command, CommandInput, CommandList, CommandItem } from "@/components/ui/command";
+// @ts-ignore
+import debounce from "lodash.debounce"
 import {
     DropdownMenu,
     DropdownMenuTrigger,
@@ -21,16 +20,15 @@ import {
     DropdownMenuSeparator,
     DropdownMenuCheckboxItem
 } from "../ui/dropdown-menu"
-import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectTrigger,
-    SelectValue,
-} from "@/components/ui/select"
-import { CommandEmpty, CommandGroup, CommandSeparator } from "cmdk"
-import { Input } from "../ui/input"
+import { DetailCard } from "../Card"
+import Image from "next/image"
 
+
+interface Airport {
+    name: string;
+    city: string;
+    country: string;
+}
 const FlightContent = () => {
 
     const [departureCity, setDepartureCity] = useState<string>("");
@@ -38,7 +36,6 @@ const FlightContent = () => {
     const [departureDate, setDepartureDate] = useState<Date>()
     const [arrivalDate, setArrivalDate] = useState<Date>()
     const [travelType, setTravelType] = useState<string>();
-
     const [isSearched, setSearched] = useState<boolean>(false);
 
     const handleDepartureDate = (date: Date | undefined) => {
@@ -86,17 +83,73 @@ const FlightContent = () => {
         else if (arrivalCity === departureCity) {
             return toast.error("Arrival City cannot be same as departure city");
         }
-        else if (!Cities.includes(arrivalCity.charAt(0).toUpperCase() + arrivalCity.slice(1))) {
-            return toast.error("Invalid Arrival City");
-        }
-        else if (!Cities.includes(departureCity.charAt(0).toUpperCase() + departureCity.slice(1))) {
-            return toast.error("Invalid Departure City");
-        }
 
         setSearched(true)
     }
+    const [filteredDepartureAirports, setFilteredDepartureAirports] = useState<Airport[]>([]);
+    const [filteredArrivalAirports, setFilteredArrivalAirports] = useState<Airport[]>([]);
+    const [departureSearchHideFlag, setDepartureSearchHideFlag] = useState(false);
+    const [arrivalSearchHideFlag, setArrivalSearchHideFlag] = useState(false);
 
-    const filteredCities = Cities.filter(city => city.toLowerCase().includes(departureCity.toLocaleLowerCase()))
+    // Debounced function for departureCity
+    const debouncedFilterDepartureAirports = useMemo(() =>
+        debounce((query: string) => {
+            if (!query) {
+                setFilteredDepartureAirports([]);
+                return;
+            }
+
+            const filtered = Airports.filter(airport =>
+                airport.name.toLowerCase().includes(query.toLowerCase())
+                || airport.city.toLowerCase().includes(query.toLowerCase())
+                || airport.country.toLowerCase().includes(query.toLowerCase())
+            ).slice(0, 3);
+
+            setFilteredDepartureAirports(filtered);
+        }, 500), []);
+
+    // Debounced function for arrivalCity
+    const debouncedFilterArrivalAirports = useMemo(() =>
+        debounce((query: string) => {
+            if (!query) {
+                setFilteredArrivalAirports([]);
+                return;
+            }
+
+            const filtered = Airports.filter(airport =>
+                airport.name.toLowerCase().includes(query.toLowerCase())
+                || airport.city.toLowerCase().includes(query.toLowerCase())
+                || airport.country.toLowerCase().includes(query.toLowerCase())
+            ).slice(0, 3);
+
+            setFilteredArrivalAirports(filtered);
+        }, 500), []);
+
+    // Effect hook for departureCity
+    useEffect(() => {
+        debouncedFilterDepartureAirports(departureCity);
+
+        // Cleanup function to cancel debouncing on unmount
+        return () => {
+            debouncedFilterDepartureAirports.cancel();
+        };
+    }, [departureCity, debouncedFilterDepartureAirports]);
+
+    // Effect hook for arrivalCity
+    useEffect(() => {
+        debouncedFilterArrivalAirports(arrivalCity);
+
+        // Cleanup function to cancel debouncing on unmount
+        return () => {
+            debouncedFilterArrivalAirports.cancel();
+        };
+    }, [arrivalCity, debouncedFilterArrivalAirports]);
+
+
+
+
+
+
     return (
         <>
             <div className="gradient-background py-10 text-card-foreground w-full lg:px-20 md:px-10 px-4 rounded-sm">
@@ -105,8 +158,6 @@ const FlightContent = () => {
                     !isSearched
                         // false
                         ? (<div className="flex flex-col gap-y-8">
-
-
 
                             <RadioGroup
                                 defaultValue="oneway"
@@ -120,10 +171,6 @@ const FlightContent = () => {
                                     <RadioGroupItem value="return" id="return" />
                                     <Label htmlFor="return">Return</Label>
                                 </div>
-                                <div className={`flex items-center space-x-2 p-2 rounded-xl transition-all duration-300 ${travelType === "multi-city" && "bg-background/30"}`}>
-                                    <RadioGroupItem value="multi-city" id="multi" />
-                                    <Label htmlFor="multi">Multi City</Label>
-                                </div>
                             </RadioGroup>
 
                             <div className="flex items-center justify-center gap-4 w-full lg:flex-row flex-col">
@@ -131,32 +178,80 @@ const FlightContent = () => {
                                 <div className="w-full relative">
                                     <InputGroup
                                         value={departureCity}
-                                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setDepartureCity(e.target.value)}
+                                        onChange={(e: any) => {
+                                            setDepartureSearchHideFlag(true)
+                                            setDepartureCity(e.target.value)
+                                            setTimeout(() => {
+                                                setDepartureSearchHideFlag(false)
+                                            }, 5000)
+                                        }}
                                         Icon={PlaneTakeoff}
                                         size={20}
                                         placeholder={"From"}
                                         name="from"
                                     />
-                                    {departureCity && <ul className="absolute w-full bg-background text-foreground rounded-xl max-h-32 overflow-auto">
+                                    {departureSearchHideFlag && departureCity && <ul className="z-50 absolute w-full md:w-[150%] bg-background text-foreground rounded-xl max-h-32 overflow-auto">
 
-                                        {filteredCities.length ? filteredCities.map(city => <li onClick={() => setDepartureCity(city)} className="text-sm px-5 py-2 border-b-2">{city}</li>) :
-                                        <li className="text-sm px-5 py-2 border-b-2">No city found</li>
+                                        {filteredDepartureAirports.length ? filteredDepartureAirports.map((airport, i) =>
+                                            <li
+                                                key={i}
+                                                onClick={() => setDepartureCity(airport.name)}
+                                                className="px-5 py-2 border-b-2 flex items-center justify-normal gap-x-2"
+                                            >
+
+                                                <PlaneTakeoff />
+                                                <div className="flex flex-col items-start justify-normal gap-x-2">
+                                                    <p className="text-lg font-semibold">{airport.name}</p>
+                                                    <p className="text-base font-light">{airport.country} , {airport.city}</p>
+                                                </div>
+                                            </li>
+                                        ) :
+                                            <li className="text-sm px-5 py-2 border-b-2">No city found</li>
+                                        }
+                                    </ul>}
+
+
+                                </div>
+                                <div className="w-full relative">
+                                    <InputGroup
+                                        value={arrivalCity}
+                                        onChange={(e: any) => {
+                                            setArrivalSearchHideFlag(true)
+                                            setArrivalCity(e.target.value)
+                                            setTimeout(() => {
+                                                setArrivalSearchHideFlag(false)
+                                            }, 5000)
+                                        }}
+                                        Icon={PlaneLanding}
+                                        size={20}
+                                        placeholder={"To"}
+                                        name="from"
+                                    />
+                                    {arrivalSearchHideFlag && departureCity && <ul className="z-50 absolute w-full md:w-[150%] bg-background text-foreground rounded-xl max-h-32 overflow-auto">
+
+                                        {filteredArrivalAirports.length ? filteredArrivalAirports.map((airport, i) =>
+                                            <li
+                                                key={i}
+                                                onClick={() => setArrivalCity(airport.name)}
+                                                className="px-5 py-2 border-b-2 flex items-center justify-normal gap-x-2"
+                                            >
+
+                                                <PlaneTakeoff />
+                                                <div className="flex flex-col items-start justify-normal gap-x-2">
+                                                    <p className="text-lg font-semibold">{airport.name}</p>
+                                                    <p className="text-base font-light">{airport.country} , {airport.city}</p>
+                                                </div>
+                                            </li>
+                                        ) :
+                                            <li className="text-sm px-5 py-2 border-b-2">No city found</li>
                                         }
                                     </ul>}
 
                                 </div>
 
-                                <InputGroup
-                                    value={arrivalCity}
-                                    onChange={(e: React.ChangeEvent<HTMLInputElement>) => setArrivalCity(e.target.value)}
-                                    Icon={PlaneTakeoff}
-                                    size={20}
-                                    placeholder={"To"}
-                                    name="to"
-                                    list="suggestions"
-                                />
+
                                 <DatePicker placeholder={"Departure Date"} date={departureDate} setDate={handleDepartureDate} />
-                                {travelType === "round" && <DatePicker placeholder={"Arrival Date"} date={arrivalDate} setDate={handleArrivalDate} />}
+                                {travelType === "return" && <DatePicker placeholder={"Arrival Date"} date={arrivalDate} setDate={handleArrivalDate} />}
                                 <Button onClick={handleSearch} className="w-full text-lg bg-yellow-500 hover:bg-yellow-500/90">
                                     Search
                                     <IconSearch size={18} className="mx-2" />
@@ -185,7 +280,7 @@ const FlightContent = () => {
                         </div>)
                 }
             </div>
-            {/* <div className="flex flex-col mt-10 w-full lg:px-20 md:px-10 ">
+            <div className="flex flex-col mt-10 w-full lg:px-20 md:px-10 ">
 
                 <div className="flex items-center justify-between">
                     <p className="text-xl"><span className="font-bold">Result Found: </span>0</p>
@@ -230,7 +325,7 @@ const FlightContent = () => {
                             <p className="text-3xl">No Result Found</p>
                         </div>
                 }
-            </div> */}
+            </div>
         </>
     )
 }
