@@ -1,3 +1,4 @@
+import ExploreNavbar from "@/components/ExploreNavbar";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,8 +11,10 @@ export default function Explore({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <>
+      <ExploreNavbar />
       {children}
     </>
   );

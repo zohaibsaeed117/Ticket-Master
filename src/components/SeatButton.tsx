@@ -13,6 +13,7 @@ const SeatButton: React.FC<SeatButtonProps> = ({ isReserved, seatNumber, handleS
     const [isOpen, setIsOpen] = useState(false); // Track dropdown open state
 
     const setStyle = () => {
+        console.log("Hello", isReserved)
         if (isReserved === "male") return "border-blue-500 bg-blue-500 text-white cursor-not-allowed";
         else if (isReserved === "female") return "border-pink-500 bg-pink-500 text-white cursor-not-allowed";
         else return "border-accent-foreground text-accent-foreground";
@@ -24,7 +25,7 @@ const SeatButton: React.FC<SeatButtonProps> = ({ isReserved, seatNumber, handleS
                 disabled={isReserved !== null}
                 className={`border h-10 w-10 rounded-t-sm rounded-b-[4px] font-semibold ${setStyle()}`}
             >
-                {seatNumber + 1}
+                {seatNumber}
             </DropdownMenuTrigger>
             <DropdownMenuContent className='mx-auto min-w-full'>
                 <Button size={"icon"} variant={"ghost"} onClick={() => {

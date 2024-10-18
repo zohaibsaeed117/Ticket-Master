@@ -1,0 +1,6282 @@
+[
+  {
+    "id": 1,
+    "title": "Goodwin, Homenick and Kuhlman Express",
+    "description": "Bus service from Faisalabad to Islamabad",
+    "departure": {
+      "city": "Faisalabad",
+      "time": "02:47 am",
+      "date": "2024-10-27"
+    },
+    "arrival": {
+      "city": "Islamabad",
+      "time": "04:05 pm",
+      "date": "2024-04-08"
+    },
+    "price": 2291,
+    "seatsLeft": 19,
+    "href": "/explore/bus/1",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": null,
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": null,
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": null,
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": null,
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": null,
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": null,
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": null,
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": null,
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": null,
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": null,
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": null,
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": null,
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": null,
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Marquardt - O'Keefe Express",
+    "description": "Bus service from Karachi to Quetta",
+    "departure": {
+      "city": "Karachi",
+      "time": "04:55 am",
+      "date": "2024-09-13"
+    },
+    "arrival": {
+      "city": "Quetta",
+      "time": "09:43 am",
+      "date": "2024-06-30"
+    },
+    "price": 2493,
+    "seatsLeft": 43,
+    "href": "/explore/bus/2",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": null,
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": null,
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": null,
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": null,
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": null,
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": null,
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": null,
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Emmerich Group Express",
+    "description": "Bus service from Lahore to Faisalabad",
+    "departure": {
+      "city": "Lahore",
+      "time": "04:43 pm",
+      "date": "2024-02-20"
+    },
+    "arrival": {
+      "city": "Faisalabad",
+      "time": "12:52 am",
+      "date": "2024-12-24"
+    },
+    "price": 3868,
+    "seatsLeft": 35,
+    "href": "/explore/bus/3",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Terry Inc Express",
+    "description": "Bus service from Multan to Faisalabad",
+    "departure": {
+      "city": "Multan",
+      "time": "07:16 pm",
+      "date": "2024-01-27"
+    },
+    "arrival": {
+      "city": "Faisalabad",
+      "time": "03:42 am",
+      "date": "2024-08-14"
+    },
+    "price": 2940,
+    "seatsLeft": 6,
+    "href": "/explore/bus/4",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "DuBuque LLC Express",
+    "description": "Bus service from Lahore to Karachi",
+    "departure": {
+      "city": "Lahore",
+      "time": "07:03 pm",
+      "date": "2024-09-01"
+    },
+    "arrival": {
+      "city": "Karachi",
+      "time": "07:30 am",
+      "date": "2024-05-07"
+    },
+    "price": 1707,
+    "seatsLeft": 28,
+    "href": "/explore/bus/5",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Mertz, Hoeger and Kuhlman Express",
+    "description": "Bus service from Peshawar to Multan",
+    "departure": {
+      "city": "Peshawar",
+      "time": "04:45 am",
+      "date": "2024-10-06"
+    },
+    "arrival": {
+      "city": "Multan",
+      "time": "03:41 pm",
+      "date": "2024-06-20"
+    },
+    "price": 1638,
+    "seatsLeft": 23,
+    "href": "/explore/bus/6",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Crist, O'Keefe and Mills Express",
+    "description": "Bus service from Lahore to Karachi",
+    "departure": {
+      "city": "Lahore",
+      "time": "02:28 am",
+      "date": "2024-11-14"
+    },
+    "arrival": {
+      "city": "Karachi",
+      "time": "11:51 am",
+      "date": "2024-01-28"
+    },
+    "price": 1540,
+    "seatsLeft": 23,
+    "href": "/explore/bus/7",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Deckow, Roob and Runolfsdottir Express",
+    "description": "Bus service from Peshawar to Faisalabad",
+    "departure": {
+      "city": "Peshawar",
+      "time": "04:52 am",
+      "date": "2024-10-21"
+    },
+    "arrival": {
+      "city": "Faisalabad",
+      "time": "12:06 pm",
+      "date": "2024-02-28"
+    },
+    "price": 3659,
+    "seatsLeft": 46,
+    "href": "/explore/bus/8",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Swift, Haag and Rogahn Express",
+    "description": "Bus service from Lahore to Faisalabad",
+    "departure": {
+      "city": "Lahore",
+      "time": "07:26 am",
+      "date": "2024-05-06"
+    },
+    "arrival": {
+      "city": "Faisalabad",
+      "time": "02:02 am",
+      "date": "2024-04-17"
+    },
+    "price": 2764,
+    "seatsLeft": 39,
+    "href": "/explore/bus/9",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Rath, Ritchie and Reynolds Express",
+    "description": "Bus service from Quetta to Islamabad",
+    "departure": {
+      "city": "Quetta",
+      "time": "04:29 am",
+      "date": "2024-10-28"
+    },
+    "arrival": {
+      "city": "Islamabad",
+      "time": "09:33 am",
+      "date": "2024-04-04"
+    },
+    "price": 2191,
+    "seatsLeft": 38,
+    "href": "/explore/bus/10",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Glover, McCullough and Konopelski Express",
+    "description": "Bus service from Quetta to Peshawar",
+    "departure": {
+      "city": "Quetta",
+      "time": "12:08 am",
+      "date": "2024-01-07"
+    },
+    "arrival": {
+      "city": "Peshawar",
+      "time": "02:41 am",
+      "date": "2024-05-25"
+    },
+    "price": 3326,
+    "seatsLeft": 16,
+    "href": "/explore/bus/11",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Heller, Batz and Feil Express",
+    "description": "Bus service from Lahore to Faisalabad",
+    "departure": {
+      "city": "Lahore",
+      "time": "09:05 pm",
+      "date": "2024-05-16"
+    },
+    "arrival": {
+      "city": "Faisalabad",
+      "time": "10:31 pm",
+      "date": "2024-12-15"
+    },
+    "price": 1840,
+    "seatsLeft": 49,
+    "href": "/explore/bus/12",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Walker and Sons Express",
+    "description": "Bus service from Lahore to Islamabad",
+    "departure": {
+      "city": "Lahore",
+      "time": "10:08 am",
+      "date": "2024-04-23"
+    },
+    "arrival": {
+      "city": "Islamabad",
+      "time": "05:49 am",
+      "date": "2024-03-22"
+    },
+    "price": 3628,
+    "seatsLeft": 1,
+    "href": "/explore/bus/13",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Rippin - Vandervort Express",
+    "description": "Bus service from Quetta to Islamabad",
+    "departure": {
+      "city": "Quetta",
+      "time": "05:16 am",
+      "date": "2024-09-12"
+    },
+    "arrival": {
+      "city": "Islamabad",
+      "time": "09:39 pm",
+      "date": "2024-03-11"
+    },
+    "price": 2585,
+    "seatsLeft": 40,
+    "href": "/explore/bus/14",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Mante, Abbott and Schuster Express",
+    "description": "Bus service from Quetta to Lahore",
+    "departure": {
+      "city": "Quetta",
+      "time": "11:26 am",
+      "date": "2024-09-18"
+    },
+    "arrival": {
+      "city": "Lahore",
+      "time": "08:44 pm",
+      "date": "2024-08-12"
+    },
+    "price": 3398,
+    "seatsLeft": 31,
+    "href": "/explore/bus/15",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Batz, Hermann and Fritsch Express",
+    "description": "Bus service from Quetta to Peshawar",
+    "departure": {
+      "city": "Quetta",
+      "time": "12:24 pm",
+      "date": "2024-08-02"
+    },
+    "arrival": {
+      "city": "Peshawar",
+      "time": "10:45 pm",
+      "date": "2024-03-28"
+    },
+    "price": 3295,
+    "seatsLeft": 36,
+    "href": "/explore/bus/16",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Strosin, Friesen and Satterfield Express",
+    "description": "Bus service from Faisalabad to Peshawar",
+    "departure": {
+      "city": "Faisalabad",
+      "time": "05:36 pm",
+      "date": "2024-06-10"
+    },
+    "arrival": {
+      "city": "Peshawar",
+      "time": "11:42 pm",
+      "date": "2024-04-30"
+    },
+    "price": 1631,
+    "seatsLeft": 46,
+    "href": "/explore/bus/17",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Buckridge Group Express",
+    "description": "Bus service from Multan to Lahore",
+    "departure": {
+      "city": "Multan",
+      "time": "01:44 am",
+      "date": "2024-06-11"
+    },
+    "arrival": {
+      "city": "Lahore",
+      "time": "09:10 am",
+      "date": "2024-03-12"
+    },
+    "price": 3182,
+    "seatsLeft": 30,
+    "href": "/explore/bus/18",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Kuhn - Kris Express",
+    "description": "Bus service from Peshawar to Quetta",
+    "departure": {
+      "city": "Peshawar",
+      "time": "08:40 pm",
+      "date": "2024-12-23"
+    },
+    "arrival": {
+      "city": "Quetta",
+      "time": "01:07 am",
+      "date": "2024-12-18"
+    },
+    "price": 1815,
+    "seatsLeft": 43,
+    "href": "/explore/bus/19",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Bergnaum - Durgan Express",
+    "description": "Bus service from Peshawar to Lahore",
+    "departure": {
+      "city": "Peshawar",
+      "time": "03:34 am",
+      "date": "2024-05-07"
+    },
+    "arrival": {
+      "city": "Lahore",
+      "time": "07:42 pm",
+      "date": "2024-06-15"
+    },
+    "price": 2898,
+    "seatsLeft": 33,
+    "href": "/explore/bus/20",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "male",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "female",
+        "price": 1800,
+        "category": "Silver"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "female",
+        "price": 2500,
+        "category": "Premium"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "male",
+        "price": 2500,
+        "category": "Premium"
+      }
+    ]
+  }
+]

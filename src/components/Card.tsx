@@ -11,6 +11,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import Link from "next/link"
+import { format } from "date-fns"
 
 
 const notifications = [
@@ -68,8 +69,8 @@ const DetailCard: React.FC<DetailCardProps> = ({ id, href, title, description, d
         </div>
         <div className="flex items-center justify-between">
           <div className="flex items-center justify-center flex-col bg-accent text-accent-foreground h-20 w-20 rounded-lg">
-            <p className="text-base font-semibold">Time</p>
-            <p className="text-sm font-light">{departure.time}</p>
+            <p className="text-base font-semibold">Date</p>
+            <p className="text-sm font-light">{format(departure?.date, "dd-MMM-yyyy")}</p>
           </div>
           <div className="flex items-center justify-center flex-col bg-accent text-accent-foreground h-20 w-20 rounded-lg">
             <p className="text-base font-semibold">Price</p>
