@@ -146,7 +146,7 @@ const TrainContent = () => {
             trainName: "Multan Express"
         }
     ]
-    const renderItems = trains.map(data => <DetailCard key={data.id} id={data.id} title={data.title} description={data.description} arrival={data.arrival} departure={data.departure} price={data.price} seatsLeft={data.seatsLeft} />)
+    const renderItems = trains.map(data => <DetailCard key={data.id} id={data.id} title={data.title} description={data.description} arrival={data.arrival} departure={data.departure} price={data.price} seatsLeft={data.seatsLeft} href={'explore/bus/' + data.id}/>)
     return (
         <>
             <div className="gradient-background py-10 text-card-foreground w-full lg:px-20 md:px-10 px-4 rounded-sm">

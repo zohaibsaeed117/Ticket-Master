@@ -234,7 +234,7 @@ const FlightContent = () => {
         }
     ]
 
-    const renderItems = flights.map(data => <DetailCard key={data.id} id={data.id} title={data.title} description={data.description} arrival={data.arrival} departure={data.departure} price={data.price} seatsLeft={data.seatsLeft} />)
+    const renderItems = flights.map(data => <DetailCard key={data.id} id={data.id} title={data.title} description={data.description} arrival={data.arrival} departure={data.departure} price={data.price} seatsLeft={data.seatsLeft} href={'explore/bus/' + data.id} />)
 
     return (
         <>
