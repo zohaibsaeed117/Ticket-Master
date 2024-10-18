@@ -10,7 +10,7 @@ import { toast } from "react-hot-toast"
 import { format } from "date-fns"
 import { Edit, ListFilter } from "lucide-react"
 import { Separator } from "../ui/separator"
-import { DetailCard } from "../Card"
+import DetailCard from "../Card"
 import Image from "next/image"
 import {
     DropdownMenu,
@@ -93,6 +93,94 @@ const BusContent = () => {
         setSearched(true)
     }
 
+    const buses = [
+        {
+            id: 1,
+            title: "Pakistan International Airlines",
+            description: "Economy Class",
+            departure: {
+                city: "Lahore",
+                time: "08:00 AM",
+                date: "2024-10-17"
+            },
+            arrival: {
+                city: "Islamabad",
+                time: "09:30 AM",
+                date: "2024-10-17"
+            },
+            price: 5500,
+            seatsLeft: 20
+        },
+        {
+            id: 2,
+            title: "Airblue",
+            description: "Business Class",
+            departure: {
+                city: "Karachi",
+                time: "10:00 AM",
+                date: "2024-10-18"
+            },
+            arrival: {
+                city: "Lahore",
+                time: "11:45 AM",
+                date: "2024-10-18"
+            },
+            price: 12000,
+            seatsLeft: 15
+        },
+        {
+            id: 3,
+            title: "Serene Air",
+            description: "Economy Class",
+            departure: {
+                city: "Islamabad",
+                time: "02:00 PM",
+                date: "2024-10-17"
+            },
+            arrival: {
+                city: "Karachi",
+                time: "04:15 PM",
+                date: "2024-10-17"
+            },
+            price: 4800,
+            seatsLeft: 25
+        },
+        {
+            id: 4,
+            title: "Pakistan International Airlines",
+            description: "Premium Economy",
+            departure: {
+                city: "Lahore",
+                time: "06:00 PM",
+                date: "2024-10-18"
+            },
+            arrival: {
+                city: "Dubai",
+                time: "09:30 PM",
+                date: "2024-10-18"
+            },
+            price: 35000,
+            seatsLeft: 10
+        },
+        {
+            id: 5,
+            title: "Airblue",
+            description: "Economy Class",
+            departure: {
+                city: "Karachi",
+                time: "08:00 AM",
+                date: "2024-10-19"
+            },
+            arrival: {
+                city: "Islamabad",
+                time: "09:45 AM",
+                date: "2024-10-19"
+            },
+            price: 5000,
+            seatsLeft: 22
+        }
+    ]
+    const renderItems = buses.map(data => <DetailCard key={data.id} id={data.id} title={data.title} description={data.description} arrival={data.arrival} departure={data.departure} price={data.price} seatsLeft={data.seatsLeft} href={'explore/bus/' + data.id} />)
     return (
         <>
             <div className="gradient-background py-10 text-card-foreground w-full lg:px-20 md:px-10 px-4 rounded-sm">
@@ -205,11 +293,7 @@ const BusContent = () => {
                 {
                     true ?
                         <div className="grid grid-cols-[repeat(auto-fit,minmax(300,auto))] lg:grid-cols-[repeat(auto-fit,minmax(350px,auto))] gap-y-6 my-8">
-                            <DetailCard />
-                            <DetailCard />
-                            <DetailCard />
-                            <DetailCard />
-                            <DetailCard />
+                            {renderItems}
                         </div>
                         :
                         <div className="flex flex-col gap-y-10 mt-10 items-center justify-center">

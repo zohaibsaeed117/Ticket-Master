@@ -9,16 +9,17 @@ import React, { useState } from "react"
 import BusContent from "@/components/explore/BusContent"
 import TrainContent from "@/components/explore/TrainContent"
 import FlightContent from "@/components/explore/FlightContent"
+import EventContent from "@/components/explore/EventContent"
+import MoviesContent from "@/components/explore/MovieContent"
 
 export default function Explore() {
-  const [ticketType, setTicketType] = useState<String>("bus")
   return (
     <>
-      <Tabs defaultValue="flight" className="w-full mx-auto mt-4">
+      <Tabs defaultValue="movies" className="w-full mx-auto mt-4">
         <TabsList className="w-[80%] flex flex-1 flex-wrap items-center justify-center h-full mx-auto">
           {
             ["bus", "train", "flight", "events", "movies"]
-              .map(category => <TabsTrigger value={category} className="flex-1" onClick={() => setTicketType(category)}>{category.charAt(0).toUpperCase() + category.slice(1)}</TabsTrigger>)
+              .map(category => <TabsTrigger value={category} className="flex-1" >{category.charAt(0).toUpperCase() + category.slice(1)}</TabsTrigger>)
           }
         </TabsList>
         <TabsContent value="bus">
@@ -28,13 +29,13 @@ export default function Explore() {
           <TrainContent />
         </TabsContent>
         <TabsContent value="flight">
-          <FlightContent/>
+          <FlightContent />
         </TabsContent>
         <TabsContent value="events">
-          train
+          <EventContent />
         </TabsContent>
         <TabsContent value="movies">
-          train
+          <MoviesContent />
         </TabsContent>
       </Tabs>
     </>

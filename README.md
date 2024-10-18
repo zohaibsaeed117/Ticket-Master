@@ -36,14 +36,19 @@ The system is built using modern web technologies, with a focus on usability, se
 ### **Frontend Features:**
 - [x] **Home Page**: Display featured events/travel options.
 - [x] **Login/Signup Page**: User registration and authentication.
-- [ ] **Categories Page**: Make Page for Each Categories.
+- [x] **Categories Page**: Make Page for Each Categories.
     - [x] Bus
     - [x] Train
     - [x] Flight
-    - [ ] Movies
-    - [ ] Events
+    - [X] Movies
+    - [X] Events
 - [ ] **Search and Filter**: Add search functionality with filters (by category, date, location).
 - [ ] **Booking Detail Page**: Display detailed information about selected events/travel.
+    - [x] Bus
+    - [ ] Train
+    - [ ] Flight
+    - [ ] Movies
+    - [ ] Events
 - [ ] **Booking Page**: Implement booking flow with ticket selection and payment options.
 - [ ] **Booking Confirmation Page**: Display confirmation details after booking.
 - [ ] **User Profile Page**: Allow users to manage their profile and payment information.

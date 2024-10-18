@@ -10,7 +10,7 @@ import { toast } from "react-hot-toast"
 import { format } from "date-fns"
 import { Edit } from "lucide-react"
 import { Separator } from "../ui/separator"
-import { DetailCard } from "../Card"
+import DetailCard from "../Card"
 import Image from "next/image"
 const TrainContent = () => {
 
@@ -60,6 +60,93 @@ const TrainContent = () => {
         setSearched(true)
     }
 
+    const trains = [
+        {
+            id: 1,
+            title: "Pakistan Railways",
+            description: "Business Class",
+            departure: {
+                city: "Lahore",
+                time: "08:00 AM",
+                date: "2024-10-17",
+                station: "Lahore Junction"
+            },
+            arrival: {
+                city: "Karachi",
+                time: "08:00 PM",
+                date: "2024-10-17",
+                station: "Karachi Cantonment"
+            },
+            price: 6000,
+            seatsLeft: 15,
+            trainNumber: "101-Down",
+            trainName: "Pakistan Express"
+        },
+        {
+            id: 2,
+            title: "Pakistan Railways",
+            description: "Economy Class",
+            departure: {
+                city: "Islamabad",
+                time: "09:00 AM",
+                date: "2024-10-18",
+                station: "Islamabad Railway Station"
+            },
+            arrival: {
+                city: "Lahore",
+                time: "02:00 PM",
+                date: "2024-10-18",
+                station: "Lahore Junction"
+            },
+            price: 3000,
+            seatsLeft: 20,
+            trainNumber: "103-Down",
+            trainName: "Tezgam"
+        },
+        {
+            id: 3,
+            title: "Pakistan Railways",
+            description: "AC Business Class",
+            departure: {
+                city: "Karachi",
+                time: "10:00 AM",
+                date: "2024-10-17",
+                station: "Karachi Cantonment"
+            },
+            arrival: {
+                city: "Lahore",
+                time: "10:00 PM",
+                date: "2024-10-17",
+                station: "Lahore Junction"
+            },
+            price: 10000,
+            seatsLeft: 10,
+            trainNumber: "105-Down",
+            trainName: "Green Line Express"
+        },
+        {
+            id: 4,
+            title: "Pakistan Railways",
+            description: "Sleeper Class",
+            departure: {
+                city: "Lahore",
+                time: "08:00 PM",
+                date: "2024-10-18",
+                station: "Lahore Junction"
+            },
+            arrival: {
+                city: "Multan",
+                time: "02:00 AM",
+                date: "2024-10-19",
+                station: "Multan Cantonment"
+            },
+            price: 2500,
+            seatsLeft: 25,
+            trainNumber: "107-Down",
+            trainName: "Multan Express"
+        }
+    ]
+    const renderItems = trains.map(data => <DetailCard key={data.id} id={data.id} title={data.title} description={data.description} arrival={data.arrival} departure={data.departure} price={data.price} seatsLeft={data.seatsLeft} />)
     return (
         <>
             <div className="gradient-background py-10 text-card-foreground w-full lg:px-20 md:px-10 px-4 rounded-sm">
@@ -121,11 +208,7 @@ const TrainContent = () => {
                 {
                     true ?
                         <div className="grid grid-cols-[repeat(auto-fit,minmax(300,auto))] lg:grid-cols-[repeat(auto-fit,minmax(350px,auto))] mt-10 gap-4 w-full lg:px-20 md:px-10 ">
-                            <DetailCard />
-                            <DetailCard />
-                            <DetailCard />
-                            <DetailCard />
-                            <DetailCard />
+                            {renderItems}
                         </div>
                         :
                         <div className="flex flex-col gap-y-10 mt-10 items-center justify-center">
