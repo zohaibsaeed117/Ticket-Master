@@ -3,18 +3,18 @@ import React, { useEffect, useState } from 'react';
 import { toast } from "react-hot-toast"
 import { MoveRight, Router, X } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
-import BusSeatSelector from '@/components/BusSeatSelector';
+import FlightSeatSelector from '@/components/FlightSeatSelector';
 import LabelInputContainer from '@/components/ui/LabelInputContainer';
 import { Label } from '@/components/ui/label'
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import Loader from '@/components/Loader';
-import buses from "@/data/buses.json"
+import flights from "@/data/buses.json"
 import { format } from 'date-fns';
 
-interface BusBookingPageProps {
+interface FlightBookinPageProps {
     params: {
-        busBookingId: string;
+        flightBookingId: string;
     };
 }
 interface Seat {
@@ -24,7 +24,7 @@ interface Seat {
     readonly category: string;
 }
 
-interface BusDetail {
+interface FlightDetail {
     readonly id: number;
     readonly title: string;
     readonly description: string;
@@ -43,10 +43,10 @@ interface BusDetail {
     readonly seatsLeft: number
 }
 
-const BusBookingPage: React.FC<BusBookingPageProps> = ({ params }) => {
-    const { busBookingId } = params;
+const FlightBookinPage: React.FC<FlightBookinPageProps> = ({ params }) => {
+    const { flightBookingId } = params;
     const [error, setError] = useState<string>();
-    const [bus, setBus] = useState<BusDetail>();
+    const [flight, setFlight] = useState<FlightDetail>();
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [selectedSeats, setSelectedSeats] = useState<number[]>([]);
     const [seats, setSeats] = useState<Seat[]>([])
@@ -71,14 +71,14 @@ const BusBookingPage: React.FC<BusBookingPageProps> = ({ params }) => {
         handleSelectedSeatChange(seatIndex)
     }
     const getData = () => {
-        const data = buses?.find(data => data.id.toString() === busBookingId)
+        const data = flights?.find(data => data.id.toString() === flightBookingId)
         if (!data) {
-            return setError("Route Doesn't Exist")
+            return setError("Route Doesn't Exist " + flightBookingId)
         }
-        setBus(data)
+        setFlight(data)
         setSeats(data?.seats || [])
     }
-    useEffect(() => { 
+    useEffect(() => {
         setIsLoading(true)
         getData()
         setIsLoading(false)
@@ -89,18 +89,18 @@ const BusBookingPage: React.FC<BusBookingPageProps> = ({ params }) => {
                 <>
                     <div className="p-4 sm:p-8 w-full mx-auto gradient-background flex-wrap rounded-xl flex justify-center md:justify-between items-start sm:items-center">
                         <div className="grow sm:grow-0 order-1">
-                            <h1 className="text-2xl md:text-2xl lg:text-4xl font-bold">{bus?.title}</h1>
-                            <p className="text-sm md:text-base font-light">{bus?.description}</p>
+                            <h1 className="text-2xl md:text-2xl lg:text-4xl font-bold">{flight?.title}</h1>
+                            <p className="text-sm md:text-base font-light">{flight?.description}</p>
                         </div>
                         <div className="grow order-3 sm:order-2 md:text-xl lg:text-3xl text-xl font-medium flex gap-x-4 items-center justify-center mx-auto">
-                            {bus?.departure.city}<MoveRight size={50} className="inline-block" />{bus?.arrival.city}
+                            {flight?.departure.city}<MoveRight size={50} className="inline-block" />{flight?.arrival.city}
                         </div>
                         <div className="flex order-2 sm:order-3 items-center justify-center flex-col">
-                            <p className="text-xl md:text-xl lg:text-3xl font-bold mx-auto">{bus?.departure.date ? format(bus?.departure.date, "MMM dd yyyy") : "N/A"}</p>
+                            <p className="text-xl md:text-xl lg:text-3xl font-bold mx-auto">{flight?.departure.date ? format(flight?.departure.date, "MMM dd yyyy") : "N/A"}</p>
                             <div className="flex items-center justify-center gap-x-2">
-                                <p className="text-sm md:text-base lg:text-lg font-light">{bus?.seatsLeft} Seats Left</p>
+                                <p className="text-sm md:text-base lg:text-lg font-light">{flight?.seatsLeft} Seats Left</p>
                                 <Separator orientation="vertical" className="h-4 sm:h-6 md:h-8 w-[2px] rounded-full" />
-                                <p className="text-sm md:text-base lg:text-lg font-light">{bus?.departure.time}</p>
+                                <p className="text-sm md:text-base lg:text-lg font-light">{flight?.departure.time}</p>
                             </div>
                         </div>
                     </div>
@@ -110,7 +110,7 @@ const BusBookingPage: React.FC<BusBookingPageProps> = ({ params }) => {
                             <h1 className="text-2xl font-medium">Seat Selection</h1>
                             <div className="flex mt-4 gap-4 flex-col lg:flex-row">
                                 <div className="border rounded-xl p-4 w-full bg-card">
-                                    <BusSeatSelector seats={seats} setSeats={setSeats} selectedSeats={selectedSeats} setSelectedSeats={handleSelectedSeatChange} handleSeatSelect={handleSeatSelect} />
+                                    <FlightSeatSelector seats={seats} setSeats={setSeats} selectedSeats={selectedSeats} setSelectedSeats={handleSelectedSeatChange} handleSeatSelect={handleSeatSelect} />
                                 </div>
                                 <div className='w-full flex flex-col gap-y-4 lg:w-1/2'>
                                     <div className='w-full bg-card '>
@@ -169,7 +169,7 @@ const BusBookingPage: React.FC<BusBookingPageProps> = ({ params }) => {
 
                             <div className='bg-card p-6 rounded-xl flex flex-col gap-y-4 border'>
                                 <div>
-                                    <h1 className='text-2xl font-semibold'>Bus</h1>
+                                    <h1 className='text-2xl font-semibold'>Flight</h1>
                                     <p className='text-xl'>LHE - ISB_26</p>
                                 </div>
                                 <Separator />
@@ -232,4 +232,4 @@ const BusBookingPage: React.FC<BusBookingPageProps> = ({ params }) => {
             ));
 };
 
-export default BusBookingPage;
+export default FlightBookinPage;

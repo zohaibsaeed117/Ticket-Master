@@ -6,19 +6,18 @@ import { Button } from './ui/button';
 interface SeatButtonProps {
     isReserved: string | null;
     seatNumber: number;
-    handleSeatSelect: (index: number, selectedBy: string) => void;
+    handleSeatSelect: (index: number, selectedBy: string, carriageId: number) => void;
+    readonly carriageId?: number
 }
 
-const SeatButton: React.FC<SeatButtonProps> = ({ isReserved, seatNumber, handleSeatSelect }) => {
+const SeatButton: React.FC<SeatButtonProps> = ({ isReserved, seatNumber, carriageId, handleSeatSelect }) => {
     const [isOpen, setIsOpen] = useState(false); // Track dropdown open state
 
     const setStyle = () => {
-        console.log("Hello", isReserved)
         if (isReserved === "male") return "border-blue-500 bg-blue-500 text-white cursor-not-allowed";
         else if (isReserved === "female") return "border-pink-500 bg-pink-500 text-white cursor-not-allowed";
         else return "border-accent-foreground text-accent-foreground";
     };
-
     return (
         <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
             <DropdownMenuTrigger
@@ -30,13 +29,13 @@ const SeatButton: React.FC<SeatButtonProps> = ({ isReserved, seatNumber, handleS
             <DropdownMenuContent className='mx-auto min-w-full'>
                 <Button size={"icon"} variant={"ghost"} onClick={() => {
                     setIsOpen(false)
-                    handleSeatSelect(seatNumber, "male")
+                    handleSeatSelect(seatNumber, "male", carriageId)
                 }}>
                     <IconMan fill='blue' color='blue' />
                 </Button>
                 <Button size={"icon"} variant={"ghost"} onClick={() => {
                     setIsOpen(false)
-                    handleSeatSelect(seatNumber, "female")
+                    handleSeatSelect(seatNumber, "female", carriageId)
                 }}>
                     <IconWoman fill='#fd00cb' color='#fd00cb' />
                 </Button>

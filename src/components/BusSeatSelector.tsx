@@ -17,8 +17,9 @@ interface SeatSelectorProps {
     seats: Seat[]
     setSeats: (seats: Seat[]) => void;
     handleSeatSelect: (seatsIndex: number, seatType: string) => void;
+    steering?: boolean | true
 }
-const SeatSelector: React.FC<SeatSelectorProps> = ({ seats, setSeats, selectedSeats, handleSeatSelect, setSelectedSeats }) => {
+const BusSeatSelector: React.FC<SeatSelectorProps> = ({ steering, seats, setSeats, selectedSeats, handleSeatSelect, setSelectedSeats }) => {
 
     const totalSeats = seats.length;
 
@@ -33,7 +34,7 @@ const SeatSelector: React.FC<SeatSelectorProps> = ({ seats, setSeats, selectedSe
     return (
         <div className='flex justify-center'>
             <div className='flex justify-center flex-col items-end'>
-                <IconSteeringWheel size={50} className='text-muted-foreground' />
+                {steering && <IconSteeringWheel size={50} className='text-muted-foreground' />}
                 <div className='grid grid-cols-5 gap-2'>
                     {renderItems}
                 </div>
@@ -42,4 +43,4 @@ const SeatSelector: React.FC<SeatSelectorProps> = ({ seats, setSeats, selectedSe
     );
 };
 
-export default SeatSelector;
+export default BusSeatSelector;

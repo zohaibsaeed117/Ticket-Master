@@ -45,7 +45,7 @@ The system is built using modern web technologies, with a focus on usability, se
 - [ ] **Search and Filter**: Add search functionality with filters (by category, date, location).
 - [ ] **Booking Detail Page**: Display detailed information about selected events/travel.
     - [x] Bus
-    - [ ] Train
+    - [x] Train
     - [ ] Flight
     - [ ] Movies
     - [ ] Events
