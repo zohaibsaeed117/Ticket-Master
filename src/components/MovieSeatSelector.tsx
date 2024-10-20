@@ -19,7 +19,7 @@ interface SeatSelectorProps {
     handleSeatSelect: (seatsIndex: number, seatType: string) => void;
     steering?: boolean | true
 }
-const FlightSeatSelector: React.FC<SeatSelectorProps> = ({ steering, seats, setSeats, selectedSeats, handleSeatSelect, setSelectedSeats }) => {
+const MovieSeatSelector: React.FC<SeatSelectorProps> = ({ steering, seats, setSeats, selectedSeats, handleSeatSelect, setSelectedSeats }) => {
 
     const totalSeats = seats.length;
 
@@ -40,7 +40,7 @@ const FlightSeatSelector: React.FC<SeatSelectorProps> = ({ steering, seats, setS
                 </div>
             </div>
         </div>
-    );
+    );   
 };
 
-export default FlightSeatSelector;
+export default MovieSeatSelector;

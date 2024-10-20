@@ -21,7 +21,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 import DetailCard from "@/components/Card"
 import Image from "next/image"
-import flights from "@/data/trains.json"
+import flights from "@/data/flights.json"
 
 
 interface Airport {
@@ -135,8 +135,8 @@ const FlightContent = () => {
         return flights
             .filter(data =>
                 //@ts-ignore
-                data.departure.date === format(departureDate, 'yyyy-MM-dd') &&
-                data.departure.city === departureCity &&
+                data.departure.date === format(departureDate, 'yyyy-MM-dd') ||
+                data.departure.city === departureCity ||
                 data.arrival.city === arrivalCity)
             .map(data =>
                 <DetailCard
@@ -264,7 +264,7 @@ const FlightContent = () => {
             <div className="flex flex-col mt-10 w-full lg:px-20 md:px-10 ">
 
                 <div className="flex items-center justify-between">
-                    <p className="text-xl"><span className="font-bold">Result Found: </span>0</p>
+                    <p className="text-xl"><span className="font-bold">Result Found: </span>{renderItems().length}</p>
                     <DropdownMenu>
                         <DropdownMenuTrigger asChild>
                             <Button

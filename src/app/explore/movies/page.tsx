@@ -1,5 +1,5 @@
 import React from 'react'
-import InputGroup from '../InputGroup'
+import InputGroup from '@/components/InputGroup'
 import { Search, ListFilter } from 'lucide-react'
 import {
     DropdownMenu,
@@ -8,30 +8,42 @@ import {
     DropdownMenuLabel,
     DropdownMenuSeparator,
     DropdownMenuCheckboxItem
-} from "../ui/dropdown-menu"
-import { Button } from '../ui/button'
-import { EventCard } from '../EventCard'
+} from "@/components/ui/dropdown-menu"
+import { Button } from '@/components/ui/button'
+import { EventCard } from '@/components/EventCard'
 import Image from 'next/image'
+import { MovieCard } from '@/components/MovieCard'
+import movies from "@/data/movies.json"
 
-const EventContent = () => {
+const MoviesContent = () => {
+    const renderItems = () => {
+        return movies.map(data =>
+            <MovieCard
+                key={data.id}
+                id={data.id}
+                title={data.title}
+                poster={data.poster}
+                rating={Math.ceil(data.rating)}
+            />)
+    }
     return (
         <>
-            <div className="gradient-background py-10 text-card-foreground w-full lg:px-20 md:px-10 px-4 rounded-sm flex items-baseline justify-between">
+            <div className="gradient-background py-10 text-card-foreground w-full lg:px-20 md:px-10 px-4 rounded-sm flex items-baseline justify-between flex-col gap-y-4 md:flex-row">
                 <div className='flex flex-col gap-y-2'>
-                    <h1 className='text-3xl font-bold'>Events</h1>
-                    <p className='text-base font-light'>Book the tickets of Ongoing events</p>
+                    <h1 className='text-3xl font-bold'>Movies</h1>
+                    <p className='text-base font-light'>Book the ticket of your favorite movie</p>
                 </div>
                 <div className='flex items-center justify-center gap-x-4'>
                     <InputGroup
                         Icon={Search}
-                        placeholder="Search an Event..."
+                        placeholder="Search a Movie..."
                     />
                     <DropdownMenu>
                         <DropdownMenuTrigger asChild>
                             <Button
                                 variant="outline"
                                 size="sm"
-                                className="h-10 gap-1 text-sm" 
+                                className="h-10 gap-1 text-sm"
                             >
                                 <ListFilter className="h-3.5 w-3.5" />
                                 <span className="sr-only sm:not-sr-only">Location</span>
@@ -59,11 +71,7 @@ const EventContent = () => {
             {
                 true ?
                     <div className="grid grid-cols-[repeat(auto-fit,minmax(300,auto))] lg:grid-cols-[repeat(auto-fit,minmax(380px,auto))] gap-y-6  my-8">
-                        <EventCard />
-                        <EventCard />
-                        <EventCard />
-                        <EventCard />
-                        <EventCard />
+                        {renderItems()}
                     </div>
                     :
                     <div className="flex flex-col gap-y-10 mt-10 items-center justify-center">
@@ -75,4 +83,4 @@ const EventContent = () => {
     )
 }
 
-export default EventContent
+export default MoviesContent

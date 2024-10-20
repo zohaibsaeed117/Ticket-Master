@@ -1,20 +1,22 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import { toast } from "react-hot-toast"
-import { MoveRight, Router, X } from 'lucide-react';
+import { MoveRight, Router, Star, X } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
-import FlightSeatSelector from '@/components/FlightSeatSelector';
+import MovieSeatSelector from '@/components/MovieSeatSelector';
 import LabelInputContainer from '@/components/ui/LabelInputContainer';
 import { Label } from '@/components/ui/label'
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import Loader from '@/components/Loader';
-import flights from "@/data/flights.json"
+import movies from "@/data/movies.json"
 import { format } from 'date-fns';
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import { ButtonGroup, ButtonGroupItem } from '@/components/ui/button-group';
 
-interface FlightBookinPageProps {
+interface MovieBookinPageProps {
     params: {
-        flightBookingId: string;
+        movieBookingId: string;
     };
 }
 interface Seat {
@@ -24,29 +26,20 @@ interface Seat {
     readonly category: string;
 }
 
-interface FlightDetail {
+interface MovieDetail {
     readonly id: number;
     readonly title: string;
     readonly description: string;
-    readonly departure: {
-        city: string
-        time: string;
-        date: string
-    }
-    readonly arrival: {
-        city: string
-        time: string;
-        date: string
-    }
+    readonly poster: string
     readonly seats: Seat[];
-    readonly price: number
-    readonly seatsLeft: number
+    readonly releaseDate: string
+    readonly rating: number
 }
 
-const FlightBookinPage: React.FC<FlightBookinPageProps> = ({ params }) => {
-    const { flightBookingId } = params;
+const MovieBookinPage: React.FC<MovieBookinPageProps> = ({ params }) => {
+    const { movieBookingId } = params;
     const [error, setError] = useState<string>();
-    const [flight, setFlight] = useState<FlightDetail>();
+    const [movie, setMovie] = useState<MovieDetail>();
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [selectedSeats, setSelectedSeats] = useState<number[]>([]);
     const [seats, setSeats] = useState<Seat[]>([])
@@ -71,11 +64,11 @@ const FlightBookinPage: React.FC<FlightBookinPageProps> = ({ params }) => {
         handleSelectedSeatChange(seatIndex)
     }
     const getData = () => {
-        const data = flights?.find(data => data.id.toString() === flightBookingId)
+        const data = movies?.find(data => data.id.toString() === movieBookingId)
         if (!data) {
-            return setError("Route Doesn't Exist " + flightBookingId)
+            return setError("Route Doesn't Exist " + movieBookingId)
         }
-        setFlight(data)
+        setMovie(data)
         setSeats(data?.seats || [])
     }
     useEffect(() => {
@@ -89,18 +82,14 @@ const FlightBookinPage: React.FC<FlightBookinPageProps> = ({ params }) => {
                 <>
                     <div className="p-4 sm:p-8 w-full mx-auto gradient-background flex-wrap rounded-xl flex justify-center md:justify-between items-start sm:items-center">
                         <div className="grow sm:grow-0 order-1">
-                            <h1 className="text-2xl md:text-2xl lg:text-4xl font-bold">{flight?.title}</h1>
-                            <p className="text-sm md:text-base font-light">{flight?.description}</p>
+                            <h1 className="text-2xl md:text-2xl lg:text-4xl font-bold">{movie?.title}</h1>
+                            <p className="text-sm md:text-base font-light">{movie?.description}</p>
                         </div>
-                        <div className="grow order-3 sm:order-2 md:text-xl lg:text-3xl text-xl font-medium flex gap-x-4 items-center justify-center mx-auto">
-                            {flight?.departure.city}<MoveRight size={50} className="inline-block" />{flight?.arrival.city}
-                        </div>
+
                         <div className="flex order-2 sm:order-3 items-center justify-center flex-col">
-                            <p className="text-xl md:text-xl lg:text-3xl font-bold mx-auto">{flight?.departure.date ? format(flight?.departure.date, "MMM dd yyyy") : "N/A"}</p>
+                            <p className="text-xl md:text-xl lg:text-3xl font-bold mx-auto">{movie?.releaseDate ? format(movie?.releaseDate, "MMM dd yyyy") : "N/A"}</p>
                             <div className="flex items-center justify-center gap-x-2">
-                                <p className="text-sm md:text-base lg:text-lg font-light">{flight?.seatsLeft} Seats Left</p>
-                                <Separator orientation="vertical" className="h-4 sm:h-6 md:h-8 w-[2px] rounded-full" />
-                                <p className="text-sm md:text-base lg:text-lg font-light">{flight?.departure.time}</p>
+                                <p className="text-sm md:text-base lg:text-lg font-light flex items-center justify-center gap-x-4"><Star className='inline-block' color="yellow" fill="yellow" />2.5</p>
                             </div>
                         </div>
                     </div>
@@ -110,7 +99,7 @@ const FlightBookinPage: React.FC<FlightBookinPageProps> = ({ params }) => {
                             <h1 className="text-2xl font-medium">Seat Selection</h1>
                             <div className="flex mt-4 gap-4 flex-col lg:flex-row">
                                 <div className="border rounded-xl p-4 w-full bg-card">
-                                    <FlightSeatSelector seats={seats} setSeats={setSeats} selectedSeats={selectedSeats} setSelectedSeats={handleSelectedSeatChange} handleSeatSelect={handleSeatSelect} />
+                                    <MovieSeatSelector seats={seats} setSeats={setSeats} selectedSeats={selectedSeats} setSelectedSeats={handleSelectedSeatChange} handleSeatSelect={handleSeatSelect} />
                                 </div>
                                 <div className='w-full flex flex-col gap-y-4 lg:w-1/2'>
                                     <div className='w-full bg-card '>
@@ -150,6 +139,27 @@ const FlightBookinPage: React.FC<FlightBookinPageProps> = ({ params }) => {
                                             ) : <p className='text-xl font-bold'>No Seats Selected</p>}
                                         </div>
                                     </div>
+                                    <div className='border rounded-xl p-4 flex flex-col gap-y-4 bg-card'>
+                                        <h1 className="text-2xl font-bold">Select TimeSlot</h1>
+                                        <ButtonGroup className="grid grid-cols-2 items-center justify-center">
+                                            <ButtonGroupItem className=""
+                                                value="option1"
+                                                label="9:00 - 12:00"
+                                            />
+                                            <ButtonGroupItem className=""
+                                                value="option2"
+                                                label="14:00 - 16:00"
+                                            />
+                                            <ButtonGroupItem className=""
+                                                value="option3"
+                                                label="18:00 - 20:00"
+                                            />
+                                            <ButtonGroupItem className=""
+                                                value="option4"
+                                                label="21:00 - 2300"
+                                            />
+                                        </ButtonGroup>
+                                    </div>
                                     <div className='border rounded-xl p-4 flex flex-col gap-y-4 bg-card '>
                                         <h1 className='text-2xl font-bold'>Seats Arrangments</h1>
                                         {[{ category: "Silver", range: "(1-10)", price: "1100" },
@@ -164,12 +174,13 @@ const FlightBookinPage: React.FC<FlightBookinPageProps> = ({ params }) => {
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                         <div className='w-full lg:w-1/3 flex gap-y-4 flex-col'>
 
                             <div className='bg-card p-6 rounded-xl flex flex-col gap-y-4 border'>
                                 <div>
-                                    <h1 className='text-2xl font-semibold'>Flight</h1>
+                                    <h1 className='text-2xl font-semibold'>Movie</h1>
                                     <p className='text-xl'>LHE - ISB_26</p>
                                 </div>
                                 <Separator />
@@ -232,4 +243,4 @@ const FlightBookinPage: React.FC<FlightBookinPageProps> = ({ params }) => {
             ));
 };
 
-export default FlightBookinPage;
+export default MovieBookinPage;

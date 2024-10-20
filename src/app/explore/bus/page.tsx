@@ -95,9 +95,10 @@ const BusContent = () => {
         return buses
             .filter(data =>
                 //@ts-ignore
-                data.departure.date === format(departureDate, 'yyyy-MM-dd') &&
-                data.departure.city === departureCity &&
-                data.arrival.city === arrivalCity)
+                data.departure.date === format(departureDate, 'yyyy-MM-dd') ||
+                data.departure.city === departureCity ||
+                data.arrival.city === arrivalCity
+            )
             .map(data =>
                 <DetailCard
                     key={data.id}

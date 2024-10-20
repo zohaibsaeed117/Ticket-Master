@@ -1,0 +1,6902 @@
+[
+  {
+    "id": 1,
+    "flightNumber": "WDKXBY",
+    "title": "Runolfsson, Purdy and Stiedemann Airlines",
+    "description": "Flight service from Islamabad to Quetta",
+    "departure": {
+      "city": "Islamabad",
+      "time": "05:25 am",
+      "date": "2024-11-13"
+    },
+    "arrival": {
+      "city": "Quetta",
+      "time": "09:25 am",
+      "date": "2024-11-13"
+    },
+    "price": 50123,
+    "seatsLeft": 53,
+    "href": "/explore/flight/1",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 50,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 51,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 52,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 53,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 54,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "flightNumber": "SUPKPY",
+    "title": "Bechtelar Group Airlines",
+    "description": "Flight service from Peshawar to Karachi",
+    "departure": {
+      "city": "Peshawar",
+      "time": "06:46 am",
+      "date": "2025-07-15"
+    },
+    "arrival": {
+      "city": "Karachi",
+      "time": "08:46 am",
+      "date": "2025-07-15"
+    },
+    "price": 31604,
+    "seatsLeft": 51,
+    "href": "/explore/flight/2",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 50,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 51,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 52,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 53,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 54,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "flightNumber": "C86DVI",
+    "title": "Franecki, Jones and Blanda Airlines",
+    "description": "Flight service from Islamabad to Karachi",
+    "departure": {
+      "city": "Islamabad",
+      "time": "05:02 pm",
+      "date": "2025-05-11"
+    },
+    "arrival": {
+      "city": "Karachi",
+      "time": "09:02 pm",
+      "date": "2025-05-11"
+    },
+    "price": 44168,
+    "seatsLeft": 43,
+    "href": "/explore/flight/3",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 50,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 51,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 52,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 53,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 54,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "flightNumber": "WATFGD",
+    "title": "Bechtelar LLC Airlines",
+    "description": "Flight service from Faisalabad to Multan",
+    "departure": {
+      "city": "Faisalabad",
+      "time": "08:40 am",
+      "date": "2025-03-25"
+    },
+    "arrival": {
+      "city": "Multan",
+      "time": "09:40 am",
+      "date": "2025-03-25"
+    },
+    "price": 52761,
+    "seatsLeft": 13,
+    "href": "/explore/flight/4",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 50,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 51,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 52,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 53,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 54,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "flightNumber": "PTG6WG",
+    "title": "Schiller Inc Airlines",
+    "description": "Flight service from Lahore to Karachi",
+    "departure": {
+      "city": "Lahore",
+      "time": "05:48 pm",
+      "date": "2024-11-01"
+    },
+    "arrival": {
+      "city": "Karachi",
+      "time": "09:48 pm",
+      "date": "2024-11-01"
+    },
+    "price": 44462,
+    "seatsLeft": 14,
+    "href": "/explore/flight/5",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 50,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 51,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 52,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 53,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 54,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "flightNumber": "YYYABY",
+    "title": "Kub - Frami Airlines",
+    "description": "Flight service from Islamabad to Lahore",
+    "departure": {
+      "city": "Islamabad",
+      "time": "04:32 pm",
+      "date": "2025-08-18"
+    },
+    "arrival": {
+      "city": "Lahore",
+      "time": "08:32 pm",
+      "date": "2025-08-18"
+    },
+    "price": 31948,
+    "seatsLeft": 9,
+    "href": "/explore/flight/6",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 50,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 51,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 52,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 53,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 54,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "flightNumber": "Y2GOF8",
+    "title": "Klein and Sons Airlines",
+    "description": "Flight service from Islamabad to Quetta",
+    "departure": {
+      "city": "Islamabad",
+      "time": "08:26 pm",
+      "date": "2025-03-02"
+    },
+    "arrival": {
+      "city": "Quetta",
+      "time": "12:26 am",
+      "date": "2025-03-02"
+    },
+    "price": 42643,
+    "seatsLeft": 11,
+    "href": "/explore/flight/7",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 50,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 51,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 52,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 53,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 54,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "flightNumber": "0BJU0G",
+    "title": "Kuhic - Schamberger Airlines",
+    "description": "Flight service from Islamabad to Multan",
+    "departure": {
+      "city": "Islamabad",
+      "time": "02:51 am",
+      "date": "2025-01-05"
+    },
+    "arrival": {
+      "city": "Multan",
+      "time": "03:51 am",
+      "date": "2025-01-05"
+    },
+    "price": 34703,
+    "seatsLeft": 19,
+    "href": "/explore/flight/8",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 50,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 51,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 52,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 53,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 54,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "flightNumber": "AMQVNH",
+    "title": "Lowe, Stoltenberg and Hauck Airlines",
+    "description": "Flight service from Faisalabad to Karachi",
+    "departure": {
+      "city": "Faisalabad",
+      "time": "03:26 am",
+      "date": "2025-06-27"
+    },
+    "arrival": {
+      "city": "Karachi",
+      "time": "07:26 am",
+      "date": "2025-06-28"
+    },
+    "price": 44499,
+    "seatsLeft": 8,
+    "href": "/explore/flight/9",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 50,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 51,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 52,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 53,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 54,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "flightNumber": "VUHINQ",
+    "title": "Reynolds - Gulgowski Airlines",
+    "description": "Flight service from Peshawar to Islamabad",
+    "departure": {
+      "city": "Peshawar",
+      "time": "06:58 pm",
+      "date": "2025-07-31"
+    },
+    "arrival": {
+      "city": "Islamabad",
+      "time": "11:58 pm",
+      "date": "2025-07-31"
+    },
+    "price": 35940,
+    "seatsLeft": 35,
+    "href": "/explore/flight/10",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 50,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 51,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 52,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 53,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 54,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "flightNumber": "QAFJCG",
+    "title": "Blick LLC Airlines",
+    "description": "Flight service from Multan to Faisalabad",
+    "departure": {
+      "city": "Multan",
+      "time": "10:04 pm",
+      "date": "2025-05-06"
+    },
+    "arrival": {
+      "city": "Faisalabad",
+      "time": "01:04 am",
+      "date": "2025-05-06"
+    },
+    "price": 43145,
+    "seatsLeft": 21,
+    "href": "/explore/flight/11",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 50,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 51,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 52,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 53,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 54,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "flightNumber": "7ABWWU",
+    "title": "Braun - Torp Airlines",
+    "description": "Flight service from Quetta to Multan",
+    "departure": {
+      "city": "Quetta",
+      "time": "03:02 pm",
+      "date": "2025-09-18"
+    },
+    "arrival": {
+      "city": "Multan",
+      "time": "05:02 pm",
+      "date": "2025-09-18"
+    },
+    "price": 50301,
+    "seatsLeft": 31,
+    "href": "/explore/flight/12",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 50,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 51,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 52,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 53,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 54,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "flightNumber": "OESFLZ",
+    "title": "Witting, Quitzon and Homenick Airlines",
+    "description": "Flight service from Multan to Islamabad",
+    "departure": {
+      "city": "Multan",
+      "time": "10:27 am",
+      "date": "2025-05-31"
+    },
+    "arrival": {
+      "city": "Islamabad",
+      "time": "12:27 pm",
+      "date": "2025-05-31"
+    },
+    "price": 40413,
+    "seatsLeft": 37,
+    "href": "/explore/flight/13",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 50,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 51,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 52,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 53,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 54,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "flightNumber": "YUHAQP",
+    "title": "Bogisich Inc Airlines",
+    "description": "Flight service from Lahore to Peshawar",
+    "departure": {
+      "city": "Lahore",
+      "time": "06:47 pm",
+      "date": "2025-07-22"
+    },
+    "arrival": {
+      "city": "Peshawar",
+      "time": "10:47 pm",
+      "date": "2025-07-22"
+    },
+    "price": 39464,
+    "seatsLeft": 21,
+    "href": "/explore/flight/14",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 50,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 51,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 52,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 53,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 54,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "flightNumber": "OBKX07",
+    "title": "Schuppe, Lang and Schaefer Airlines",
+    "description": "Flight service from Islamabad to Quetta",
+    "departure": {
+      "city": "Islamabad",
+      "time": "07:56 am",
+      "date": "2025-07-22"
+    },
+    "arrival": {
+      "city": "Quetta",
+      "time": "08:56 am",
+      "date": "2025-07-22"
+    },
+    "price": 33364,
+    "seatsLeft": 31,
+    "href": "/explore/flight/15",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 50,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 51,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 52,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 53,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 54,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "flightNumber": "T2KINW",
+    "title": "Lebsack, Boehm and Klocko Airlines",
+    "description": "Flight service from Quetta to Karachi",
+    "departure": {
+      "city": "Quetta",
+      "time": "06:24 pm",
+      "date": "2025-09-12"
+    },
+    "arrival": {
+      "city": "Karachi",
+      "time": "11:24 pm",
+      "date": "2025-09-12"
+    },
+    "price": 45244,
+    "seatsLeft": 19,
+    "href": "/explore/flight/16",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 50,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 51,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 52,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 53,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 54,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "flightNumber": "E6IHJI",
+    "title": "Boehm LLC Airlines",
+    "description": "Flight service from Multan to Karachi",
+    "departure": {
+      "city": "Multan",
+      "time": "05:47 pm",
+      "date": "2025-02-04"
+    },
+    "arrival": {
+      "city": "Karachi",
+      "time": "09:47 pm",
+      "date": "2025-02-04"
+    },
+    "price": 36593,
+    "seatsLeft": 51,
+    "href": "/explore/flight/17",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 50,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 51,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 52,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 53,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 54,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "flightNumber": "ZFVTD7",
+    "title": "Crist - Goyette Airlines",
+    "description": "Flight service from Peshawar to Quetta",
+    "departure": {
+      "city": "Peshawar",
+      "time": "02:11 pm",
+      "date": "2025-01-29"
+    },
+    "arrival": {
+      "city": "Quetta",
+      "time": "04:11 pm",
+      "date": "2025-01-29"
+    },
+    "price": 24244,
+    "seatsLeft": 24,
+    "href": "/explore/flight/18",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 50,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 51,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 52,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 53,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 54,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "flightNumber": "WWKMGJ",
+    "title": "Hammes - Brekke Airlines",
+    "description": "Flight service from Lahore to Peshawar",
+    "departure": {
+      "city": "Lahore",
+      "time": "09:31 am",
+      "date": "2025-09-14"
+    },
+    "arrival": {
+      "city": "Peshawar",
+      "time": "02:31 pm",
+      "date": "2025-09-14"
+    },
+    "price": 53661,
+    "seatsLeft": 17,
+    "href": "/explore/flight/19",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 50,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 51,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 52,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 53,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 54,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "flightNumber": "SPDPSR",
+    "title": "Osinski, Koepp and Bernhard Airlines",
+    "description": "Flight service from Islamabad to Multan",
+    "departure": {
+      "city": "Islamabad",
+      "time": "08:17 pm",
+      "date": "2024-11-08"
+    },
+    "arrival": {
+      "city": "Multan",
+      "time": "01:17 am",
+      "date": "2024-11-08"
+    },
+    "price": 34967,
+    "seatsLeft": 18,
+    "href": "/explore/flight/20",
+    "seats": [
+      {
+        "seatNumber": 1,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 2,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 3,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 4,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 5,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 6,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 7,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 8,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 9,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 10,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 11,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 12,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 13,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 14,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 15,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 16,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 17,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 18,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 19,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 20,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 21,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 22,
+        "reservedBy": "female",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 23,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 24,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 25,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 26,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 27,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 28,
+        "reservedBy": null,
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 29,
+        "reservedBy": "male",
+        "price": 25000,
+        "category": "Economy"
+      },
+      {
+        "seatNumber": 30,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 31,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 32,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 33,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 34,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 35,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 36,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 37,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 38,
+        "reservedBy": "female",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 39,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 40,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 41,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 42,
+        "reservedBy": null,
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 43,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 44,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 45,
+        "reservedBy": "male",
+        "price": 35000,
+        "category": "Premium Economy"
+      },
+      {
+        "seatNumber": 46,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 47,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 48,
+        "reservedBy": "female",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 49,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 50,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 51,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 52,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 53,
+        "reservedBy": "male",
+        "price": 45000,
+        "category": "Business"
+      },
+      {
+        "seatNumber": 54,
+        "reservedBy": null,
+        "price": 45000,
+        "category": "Business"
+      }
+    ]
+  }
+]
