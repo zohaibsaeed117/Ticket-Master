@@ -5,14 +5,15 @@ import Image from "next/image";
 import { Menu, Router, SeparatorHorizontal } from "lucide-react";
 import { Button } from "./ui/button";
 import ResponsiveNavDrawer from "./ResponsiveNavDrawer";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { AvatarDropDown } from "./AvatarDropDown";
 // import { toast } from "react-hot-toast";
 const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false)
+  const pathname = usePathname();
 
-  return (
+  return !pathname.includes("admin") && (
     <>
       <div className='bg-background text-foreground flex w-full justify-between font-roboto shadow-md max-lg:flex-row-reverse'>
         <Link href={"/"} className="ml-4">
