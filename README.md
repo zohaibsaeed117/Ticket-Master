@@ -47,8 +47,8 @@ The system is built using modern web technologies, with a focus on usability, se
     - [x] Bus
     - [x] Train
     - [x] Flight
-    - [ ] Movies
-    - [ ] Events
+    - [x] Movies
+    - [x] Events
 - [ ] **Booking Page**: Implement booking flow with ticket selection and payment options.
 - [ ] **Booking Confirmation Page**: Display confirmation details after booking.
 - [ ] **User Profile Page**: Allow users to manage their profile and payment information.

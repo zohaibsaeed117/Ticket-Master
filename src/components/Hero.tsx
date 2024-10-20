@@ -5,7 +5,12 @@ import { AuroraBackground } from "./ui/aurora-background";
 import Link from "next/link";
 const Hero = () => {
     return (
-        <AuroraBackground>
+        <div
+            style={{
+                backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/about.jpg')"
+            }}
+            className="bg-cover bg-center min-h-[92vh] w-full flex items-center justify-center"
+        >
             <motion.div
                 initial={{ opacity: 0.0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -14,8 +19,7 @@ const Hero = () => {
                     duration: 0.8,
                     ease: "easeInOut",
                 }}
-                className="relative flex flex-col gap-4 items-center justify-center px-4"
-            >
+                className="gap-y-8 flex items-center justify-center flex-col rounded-xl p-8">
                 <div className="text-3xl md:text-7xl text-balance font-bold text-white text-center">
                     Ticket Master
                 </div>
@@ -27,7 +31,7 @@ const Hero = () => {
                     Get Started
                 </Link>
             </motion.div>
-        </AuroraBackground>
+        </div>
     )
 }
 
