@@ -40,7 +40,7 @@ const FlightSeatSelector: React.FC<SeatSelectorProps> = ({
         <div className='flex justify-center'>
             <div className='flex justify-center flex-col items-end'>
                 {steering && <IconSteeringWheel size={50} className='text-muted-foreground' />}
-                <div className='grid grid-cols-7 gap-2'>
+                <div className='grid grid-cols-9 gap-2'>
                     {renderItems}
                 </div>
             </div>
