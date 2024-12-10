@@ -10,7 +10,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import Loader from '@/components/Loader';
 import movies from "@/data/movies.json"
-import { format } from 'date-fns';
+import { format, set } from 'date-fns';
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { ButtonGroup, ButtonGroupItem } from '@/components/ui/button-group';
 
@@ -21,7 +21,7 @@ interface MovieBookinPageProps {
 }
 interface Seat {
     readonly seatNumber: number;
-    reservedBy: string | null;
+    bookedBy: string | null;
     readonly price: number
     readonly category: string;
 }
@@ -32,49 +32,69 @@ interface MovieDetail {
     readonly description: string;
     readonly poster: string
     readonly seats: Seat[];
-    readonly releaseDate: string
+    readonly date: string
     readonly rating: number
+    readonly timeSlots: [{ start: string, end: string }]
+    readonly category: [{ start: number, end: number, name: string, price: number }]
 }
 
 const MovieBookinPage: React.FC<MovieBookinPageProps> = ({ params }) => {
     const { movieBookingId } = params;
     const [error, setError] = useState<string>();
     const [movie, setMovie] = useState<MovieDetail>();
-    const [isLoading, setIsLoading] = useState<boolean>(false);
-    const [selectedSeats, setSelectedSeats] = useState<number[]>([]);
+    const [isLoading, setIsLoading] = useState<boolean>(true);
+    const [selectedSeats, setSelectedSeats] = useState<{ seatNo: number, price: number }[]>([]);
     const [seats, setSeats] = useState<Seat[]>([])
+    console.log(selectedSeats)
 
-    const handleSelectedSeatChange = (seatNumber: number) => {
+    const handleSelectedSeatChange = (seatNumber: number, price: number) => {
         if (selectedSeats.length === 4) {
             return toast.error("You cannot select more than 4 seats");
         }
-        setSelectedSeats((seats) => [...seats, seatNumber]);
+        setSelectedSeats((seats) => [...seats, { seatNo: seatNumber, price: price }]);
     };
     const handleRemoveSelectedSeat = (seatNumber: number) => {
-        const tempSeats = selectedSeats.filter(value => value !== seatNumber)
+        const tempSeats = selectedSeats.filter(value => value.seatNo !== seatNumber)
         setSelectedSeats(tempSeats)
         const temp = seats;
-        temp[seatNumber - 1].reservedBy = null
+        temp[seatNumber - 1].bookedBy = null
         setSeats(temp)
     }
     const handleSeatSelect = (seatIndex: number, selectedBy: string) => {
-        const tempSeats = seats;
-        tempSeats[seatIndex - 1].reservedBy = selectedBy;//Changing the seat at index
-        setSeats(tempSeats)
-        handleSelectedSeatChange(seatIndex)
-    }
-    const getData = () => {
-        const data = movies?.find(data => data.id.toString() === movieBookingId)
-        if (!data) {
-            return setError("Route Doesn't Exist " + movieBookingId)
+        if (selectedSeats.length === 4) {
+            return toast.error("You cannot select more than 4 seats");
         }
-        setMovie(data)
-        setSeats(data?.seats || [])
+        const tempSeats = seats;
+        tempSeats[seatIndex - 1].bookedBy = selectedBy;//Changing the seat at index
+        setSeats(tempSeats)
+        handleSelectedSeatChange(seatIndex, tempSeats[seatIndex - 1].price)
+    }
+    const getData = async () => {
+        setIsLoading(true)
+        try {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/movie/get-movie/${movieBookingId}`, {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${localStorage.getItem("ticket-master-token")}`,
+                }
+            })
+            const data = await response.json()
+            console.log(data)
+            if (data.success) {
+                setMovie(data.data)
+                setSeats(data.data.seats)
+            } else {
+                toast.error("Error:" + data.message)
+            }
+        } catch (error) {
+            toast.error((error as Error).message || "Something went wrong")
+        } finally {
+            setIsLoading(false)
+        }
     }
     useEffect(() => {
-        setIsLoading(true)
         getData()
-        setIsLoading(false)
     }, [])
     return error ? <h1 className='text-4xl text-center'>{error}</h1> :
         (isLoading ? <Loader />
@@ -87,9 +107,9 @@ const MovieBookinPage: React.FC<MovieBookinPageProps> = ({ params }) => {
                         </div>
 
                         <div className="flex order-2 sm:order-3 items-center justify-center flex-col">
-                            <p className="text-xl md:text-xl lg:text-3xl font-bold mx-auto">{movie?.releaseDate ? format(movie?.releaseDate, "MMM dd yyyy") : "N/A"}</p>
+                            <p className="text-xl md:text-xl lg:text-3xl font-bold mx-auto">{movie?.date ? format(movie?.date, "MMM dd yyyy") : "N/A"}</p>
                             <div className="flex items-center justify-center gap-x-2">
-                                <p className="text-sm md:text-base lg:text-lg font-light flex items-center justify-center gap-x-4"><Star className='inline-block' color="yellow" fill="yellow" />2.5</p>
+                                <p className="text-sm md:text-base lg:text-lg font-light flex items-center justify-center gap-x-4"><Star className='inline-block' color="yellow" fill="yellow" />{movie?.rating}</p>
                             </div>
                         </div>
                     </div>
@@ -107,8 +127,6 @@ const MovieBookinPage: React.FC<MovieBookinPageProps> = ({ params }) => {
                                             <h3 className='text-2xl font-semibold'>Seat Status</h3>
                                             <div className="grid grid-cols-2 gap-4 my-2">
                                                 {[
-                                                    { label: "Booked By", person: "Male", color: "blue-500" },
-                                                    { label: "Booked By", person: "Female", color: "pink-500" },
                                                     { label: "Seat", person: "Available", color: "accent-foreground" },
                                                     { label: "Seat", person: "Selected", color: "yellow-500" },
                                                 ].map((seat, index) => (
@@ -129,11 +147,11 @@ const MovieBookinPage: React.FC<MovieBookinPageProps> = ({ params }) => {
                                         <h1 className='text-2xl font-semiBold'>Booking Details</h1>
                                         <p className="text-sm">  Your selected seats will appear here. You can select a maximum of 4 seats per booking.</p>
                                         <div className='flex items-center justify-center'>
-                                            {selectedSeats.length ? selectedSeats.map(value =>
-                                                <div className="relative">
-                                                    <button onClick={() => handleRemoveSelectedSeat(value)} className='absolute h-4 w-4 -top-2 -right-2 bg-primary rounded-full flex items-center justify-center z-10'><X size={10} /></button>
+                                            {selectedSeats.length ? selectedSeats?.map(value =>
+                                                <div className="relative" key={value.seatNo}>
+                                                    <button onClick={() => handleRemoveSelectedSeat(value.seatNo)} className='absolute h-4 w-4 -top-2 -right-2 bg-primary rounded-full flex items-center justify-center z-10'><X size={10} /></button>
                                                     <div className={`flex items-center justify-center text-xl border h-10 w-10 font-semibold bg-yellow-500 text-white rounded-sm`}>
-                                                        {value}
+                                                        {value.seatNo}
                                                     </div>
                                                 </div>
                                             ) : <p className='text-xl font-bold'>No Seats Selected</p>}
@@ -142,32 +160,21 @@ const MovieBookinPage: React.FC<MovieBookinPageProps> = ({ params }) => {
                                     <div className='border rounded-xl p-4 flex flex-col gap-y-4 bg-card'>
                                         <h1 className="text-2xl font-bold">Select TimeSlot</h1>
                                         <ButtonGroup className="grid grid-cols-2 items-center justify-center">
-                                            <ButtonGroupItem className=""
-                                                value="option1"
-                                                label="9:00 - 12:00"
-                                            />
-                                            <ButtonGroupItem className=""
-                                                value="option2"
-                                                label="14:00 - 16:00"
-                                            />
-                                            <ButtonGroupItem className=""
-                                                value="option3"
-                                                label="18:00 - 20:00"
-                                            />
-                                            <ButtonGroupItem className=""
-                                                value="option4"
-                                                label="21:00 - 2300"
-                                            />
+                                            {movie?.timeSlots?.map((slot, index) => (
+                                                <ButtonGroupItem
+                                                    key={index}
+                                                    value={index.toString()}
+                                                    label={`${slot.start} - ${slot.end}`}
+                                                />
+                                            ))}
                                         </ButtonGroup>
                                     </div>
                                     <div className='border rounded-xl p-4 flex flex-col gap-y-4 bg-card '>
                                         <h1 className='text-2xl font-bold'>Seats Arrangments</h1>
-                                        {[{ category: "Silver", range: "(1-10)", price: "1100" },
-                                        { category: "Gold", range: "(20-30)", price: "1500" },
-                                        { category: "Premium", range: "(30-49)", price: "2000" }].map(seat =>
-                                            <div className='flex text-xl items-center justify-between border-b-2 py-1'>
+                                        {movie?.category?.map(seat =>
+                                            <div key={seat.name} className='flex text-xl items-center justify-between border-b-2 py-1'>
                                                 <h1 className='font-semibold'>
-                                                    {seat.category} <span className='font-light'>{seat.range}</span>
+                                                    {seat.name} <span className='font-light'>({seat.start} - {seat.end})</span>
                                                 </h1>
                                                 <span className='font-light'>Rs. {seat.price}</span>
                                             </div>)}
@@ -180,21 +187,17 @@ const MovieBookinPage: React.FC<MovieBookinPageProps> = ({ params }) => {
 
                             <div className='bg-card p-6 rounded-xl flex flex-col gap-y-4 border'>
                                 <div>
-                                    <h1 className='text-2xl font-semibold'>Movie</h1>
-                                    <p className='text-xl'>LHE - ISB_26</p>
+                                    <h1 className='text-2xl font-semibold'>{movie?.title}</h1>
                                 </div>
                                 <Separator />
                                 <div>
-                                    <p className='text-2xl font-bold'>Subtotal</p>
-                                    <div className='flex items-center justify-between'>
-                                        <p className="text-2xl font-semibold" >Outbound</p>
-                                        <p className="text-2xl">2022</p>
-                                    </div>
+                                    <p className='text-2xl font-bold'>Quantity</p>
+                                    <p>{selectedSeats?.length}</p>
                                 </div>
                                 <Separator />
                                 <div className='flex items-center justify-between'>
                                     <p className='text-2xl font-bold'>Total</p>
-                                    <p className='text-2xl'>Rs. 525</p>
+                                    <p className='text-2xl'>Rs. {selectedSeats?.reduce((acc, seat) => acc + seat?.price, 0)}</p>
                                 </div>
                             </div>
                             <div className='bg-card p-6 rounded-xl flex flex-col gap-y-4 border'>
@@ -241,6 +244,6 @@ const MovieBookinPage: React.FC<MovieBookinPageProps> = ({ params }) => {
                     </div >
                 </>
             ));
-};
+}
 
 export default MovieBookinPage;

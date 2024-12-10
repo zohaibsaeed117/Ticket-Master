@@ -5,15 +5,15 @@ import { IconSteeringWheel } from '@tabler/icons-react';
 
 interface Seat {
     readonly seatNumber: number;
-    reservedBy: string | null;
+    bookedBy: string | null;
     readonly price: number
     readonly category: string;
 }
 
 
 interface SeatSelectorProps {
-    setSelectedSeats: (open: number) => void;
-    selectedSeats: number[]
+    setSelectedSeats: (open: number, close: number) => void;
+    selectedSeats: { seatNo: number, price: number }[]
     seats: Seat[]
     setSeats: (seats: Seat[]) => void;
     handleSeatSelect: (seatsIndex: number, seatType: string) => void;
@@ -21,11 +21,11 @@ interface SeatSelectorProps {
 }
 const MovieSeatSelector: React.FC<SeatSelectorProps> = ({ steering, seats, setSeats, selectedSeats, handleSeatSelect, setSelectedSeats }) => {
 
-    const totalSeats = seats.length;
+    const totalSeats = seats?.length;
 
-    const renderItems = seats.map((seat, index) => (
+    const renderItems = seats?.map((seat, index) => (
         <React.Fragment key={seat.seatNumber}>
-            <SeatButton handleSeatSelect={handleSeatSelect} seatNumber={seat.seatNumber} isReserved={seat.reservedBy} />
+            <SeatButton handleSeatSelect={handleSeatSelect} seatNumber={seat.seatNumber} isReserved={seat.bookedBy} />
             {/* Insert empty div after every second seat, but not for the last five elements */}
             {((index + 1) % 2 === 0) && <div className="empty-div" />}
         </React.Fragment>
@@ -40,7 +40,7 @@ const MovieSeatSelector: React.FC<SeatSelectorProps> = ({ steering, seats, setSe
                 </div>
             </div>
         </div>
-    );   
+    );
 };
 
 export default MovieSeatSelector;

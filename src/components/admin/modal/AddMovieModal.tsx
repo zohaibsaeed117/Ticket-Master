@@ -16,6 +16,7 @@ import { ImageIcon } from "lucide-react";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { compareAsc, compareDesc, format } from "date-fns";
 import { DatePicker } from "@/components/DatePicker";
+import { Textarea } from "@/components/ui/textarea";
 
 
 interface AddBusModalProps {
@@ -91,7 +92,6 @@ const AddMovieModal: React.FC<AddBusModalProps> = ({ id, button, size }) => {
             }
             return
         }
-        return;
         const formData = new FormData()
         formData.append("title", title);
         formData.append("description", description);
@@ -126,7 +126,6 @@ const AddMovieModal: React.FC<AddBusModalProps> = ({ id, button, size }) => {
         }
     };
     const getData = async () => {
-        console.log("Getting data....")
         setIsLoading(true)
         try {
             const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/movie/get-movie/${id}`, {
@@ -288,16 +287,10 @@ const AddMovieModal: React.FC<AddBusModalProps> = ({ id, button, size }) => {
                                     type="date"
                                     value={date}
                                     onChange={(e) => setDate(e.target.value)}
-                                    onFocus={e=>e.target.showPicker()}
+                                    onFocus={e => e.target.showPicker()}
                                 />
                             </LabelInputContainer>
                         </div>
-
-                        <LabelInputContainer className="mb-4">
-                            <Label htmlFor="movieName">Description</Label>
-                            <RichTextEditor value={description} onChange={setDescription} />
-
-                        </LabelInputContainer>
                         <div>
                             <Table>
                                 <TableHeader>
@@ -366,7 +359,7 @@ const AddMovieModal: React.FC<AddBusModalProps> = ({ id, button, size }) => {
                                 </TableHeader >
                                 <TableBody>
                                     {
-                                        timeSlots.map((slot, index) => (
+                                        timeSlots?.map((slot, index) => (
                                             <TableRow key={index}>
                                                 <TableCell className="text-center">
                                                     <Input
@@ -393,6 +386,11 @@ const AddMovieModal: React.FC<AddBusModalProps> = ({ id, button, size }) => {
                                 <Button type="button" onClick={handleAddTimeSlot} className="my-4 mx-auto">Add TimeSlot</Button>
                                 <Button type="button" onClick={handleRemoveLastTimeSlot} className="my-4 mx-auto">Remove Last</Button>
                             </div>
+                            <LabelInputContainer className="mb-4">
+                                <Label htmlFor="movieName">Description</Label>
+                                <Textarea value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Enter description" />
+
+                            </LabelInputContainer>
                         </div>
                         {filePreview && <Image src={filePreview} alt="about" height={200} width={200} className="w-full" id="filePreview" />}
                         <Input ref={fileInputRef} onChange={handleFileInput} accept="image/*" multiple={false} type="file" className="hidden" />

@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+import React, { useEffect, useState } from 'react'
 import InputGroup from '@/components/InputGroup'
 import { Search, ListFilter } from 'lucide-react'
 import {
@@ -13,20 +14,40 @@ import { Button } from '@/components/ui/button'
 import { EventCard } from '@/components/EventCard'
 import Image from 'next/image'
 import { MovieCard } from '@/components/MovieCard'
-import movies from "@/data/movies.json"
+import toast from 'react-hot-toast'
+import Loader from '@/components/Loader'
 
 const MoviesContent = () => {
-    const renderItems = () => {
-        return movies.map(data =>
-            <MovieCard
-                key={data.id}
-                id={data.id}
-                title={data.title}
-                poster={data.poster}
-                rating={Math.ceil(data.rating)}
-            />)
+    const [isLoading, setIsLoading] = useState<boolean>(false)
+    const [data, setData] = useState<any[]>([])
+
+    const getData = async () => {
+        setIsLoading(true)
+        try {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/movie/get-movies`, {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${localStorage.getItem("ticket-master-token")}`,
+                }
+            })
+            const data = await response.json()
+            if (data.success) {
+                setData(data.data)
+            } else {
+                toast.error("Error:" + data.message)
+            }
+        } catch (error) {
+            toast.error((error as Error).message || "Something went wrong")
+        } finally {
+            setIsLoading(false)
+        }
     }
-    return (
+    console.log(data)
+    useEffect(() => {
+        getData()
+    }, [])
+    return isLoading ? <Loader /> : (
         <>
             <div className="gradient-background py-10 text-card-foreground w-full lg:px-20 md:px-10 px-4 rounded-sm flex items-baseline justify-between flex-col gap-y-4 md:flex-row">
                 <div className='flex flex-col gap-y-2'>
@@ -71,7 +92,13 @@ const MoviesContent = () => {
             {
                 true ?
                     <div className="grid grid-cols-[repeat(auto-fit,minmax(300,auto))] lg:grid-cols-[repeat(auto-fit,minmax(380px,auto))] gap-y-6  my-8">
-                        {renderItems()}
+                        {
+                            data.map((movie, index) => {
+                                return (
+                                    <MovieCard key={index} id={movie._id} poster={movie.image} rating={movie.rating} title={movie.title} />
+                                )
+                            })
+                        }
                     </div>
                     :
                     <div className="flex flex-col gap-y-10 mt-10 items-center justify-center">
