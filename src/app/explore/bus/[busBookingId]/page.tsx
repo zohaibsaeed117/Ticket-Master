@@ -11,6 +11,7 @@ import { Button } from '@/components/ui/button';
 import Loader from '@/components/Loader';
 import buses from "@/data/buses.json"
 import { format } from 'date-fns';
+import ConfirmPaymentModal from '@/components/ConfirmPaymentModal';
 
 interface BusBookingPageProps {
     params: {
@@ -243,10 +244,7 @@ const BusBookingPage: React.FC<BusBookingPageProps> = ({ params }) => {
                                         type="email"
                                     />
                                 </LabelInputContainer>
-                                <Button className="group/btn group">
-                                    Proceed to Payment
-                                    <span className="inline-block transition-transform duration-300 ease-in-out group-hover:translate-x-1">&rarr;</span>
-                                </Button>
+                                <ConfirmPaymentModal />
 
                             </div>
                         </div>
