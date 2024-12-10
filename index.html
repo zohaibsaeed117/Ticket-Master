@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zohaib -Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Condensed:wght@300&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: rgb(0, 0, 33);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(17 17 46);
+            ;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(155, 155, 241);
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 120px 0px;
+        }
+
+        .first>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+        }
+        .buttons{
+            padding:20px 70px;
+        }
+        .buttons button
+        {
+            padding:10px;
+            border:2px solid white;
+            color:white;
+            border-radius: 5px;
+            background-color: #42236b;
+            margin:2px auto;
+            cursor:pointer;
+        }
+        .buttons button:hover{
+            color:#42236b;
+            background-color: white;
+            border:2px solid #42236b;
+        }
+
+        .rightSection img {
+            width: 90%;
+        }
+
+        .purple {
+            color: rgb(175 92 255);
+        }
+
+        .grey {
+            color: grey;
+        }
+
+        hr {
+            border: 0px;
+            height: 2px;
+            background: rgb(175 92 255);
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        .second {
+            /* max-width: 80vh; */
+            margin: auto 102px;
+            height: 80vh;
+        }
+
+        .second h1 {
+            font-size: 2rem;
+        }
+
+        .second .horizontal {
+            background-color: white;
+            width: 86vw;
+            height: 2px;
+            margin-top: 56px;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-self: center;
+        }
+
+        .info img {
+            height: 30px;
+            width: 30px;
+            margin: -40px auto;
+        }
+
+        .info h3 {
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .info p {
+            font-size: 10px;
+            padding: 0px 30px;
+            text-align: justify;
+        }
+
+        .second .box .vertical {
+            background-color: white;
+            width: 0.5px;
+            height: 85px;
+            margin: 0px 114px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+
+        .box {
+            display: flex;
+        }
+        footer{
+            background-color: #2b2b2b;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            padding:20px 0px;
+        }
+
+        .footer >div {
+            width: 223px;
+            
+        }
+
+        .footer ul li {
+            list-style: none
+        }
+
+        .footer ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        .footer-text-center{
+            text-align: center;
+            padding:5px 0px;
+            background-color:#4c4848;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Zohaib's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#">About</a></li>
+                    <li> <a href="#">Services</a></li>
+                    <li> <a href="#">Project</a></li>
+                    <li> <a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first">
+            <div class="leftSection">
+                Hi, My name is
+                <span class="purple">Zohaib</span>
+                <div>and I am a Passtionate</div>
+                <span id="element" class="purple"></span>
+                <div class="buttons">
+                    <button>Download Resume</button>
+                    <a href="https://github.com/PsychoZexta" target="_blank"><button>View Github Profile</button></a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="DeveloperLogo">
+            </div>
+        </section>
+        <hr>
+
+        <section class="second">
+            <span class="grey">What i have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="horizontal"></div>
+            <div class="box">
+                <div class="info"><img src="html.png" alt="Html logo">
+                    <div class="vertical"></div>
+                    <h3>HTML Developer-Pinterst (2010-2022)</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea voluptatum illo eaque doloribus,
+                        minus, maiores delectus expedita repellendus nemo autem vero nulla cupiditate possimus saepe
+                        inventore odit blanditiis. Eligendi, maiores. Animi, saepe.</p>
+                </div>
+                <div class="info">
+                    <img src="html.png" alt="Html logo">
+                    <div class="vertical"></div>
+                    <h3>HTML Developer-Pinterst (2010-2022)</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea voluptatum illo eaque doloribus,
+                        minus, maiores delectus expedita repellendus nemo autem vero nulla cupiditate possimus saepe
+                        inventore odit blanditiis. Eligendi, maiores. Animi, saepe.</p>
+                </div>
+                <div class="info"><img src="html.png" alt="Html logo">
+                    <div class="vertical"></div>
+                    <h3>HTML Developer-Pinterst (2010-2022)</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea voluptatum illo eaque doloribus,
+                        minus, maiores delectus expedita repellendus nemo autem vero nulla cupiditate possimus saepe
+                        inventore odit blanditiis. Eligendi, maiores. Animi, saepe.</p>
+                </div>
+                <div class="info"><img src="html.png" alt="Html logo">
+                    <div class="vertical"></div>
+                    <h3>HTML Developer-Pinterst (2010-2022)</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea voluptatum illo eaque doloribus,
+                        minus, maiores delectus expedita repellendus nemo autem vero nulla cupiditate possimus saepe
+                        inventore odit blanditiis. Eligendi, maiores. Animi, saepe.</p>
+                </div>
+                <div class="info"><img src="html.png" alt="Html logo">
+                    <div class="vertical"></div>
+                    <h3>HTML Developer-Pinterst (2010-2022)</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea voluptatum illo eaque doloribus,
+                        minus, maiores delectus expedita repellendus nemo autem vero nulla cupiditate possimus saepe
+                        inventore odit blanditiis. Eligendi, maiores. Animi, saepe.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footerFirst">
+                <h1>Zohaib's Portfolio</h1>
+            </div>
+            <div class="footerSecond">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footerThird">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footerFourth">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-text-center">CopyRight &#169 www.zaibisportfolio.com | All rights reserverd</div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Data Scientist', 'Gamer'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop:true
+        });
+        
+    </script>
+</body>
+
+</html>
