@@ -7,11 +7,13 @@ import { Button } from "./ui/button";
 import ResponsiveNavDrawer from "./ResponsiveNavDrawer";
 import { usePathname, useRouter } from "next/navigation";
 import { AvatarDropDown } from "./AvatarDropDown";
+import { useUserStore } from "@/store/Store";
 // import { toast } from "react-hot-toast";
 const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false)
   const pathname = usePathname();
+  const { isAuthorized } = useUserStore();
 
   return !pathname.includes("admin") && (
     <>
@@ -29,7 +31,7 @@ const Navbar = () => {
           </ul>
           <div className="flex items-center justify-center mx-4">
             {
-              false
+              isAuthorized
                 ? <>
                   <AvatarDropDown userName={"Zohaib Saeed"} />
                 </> :

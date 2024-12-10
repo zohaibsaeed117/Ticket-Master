@@ -30,7 +30,7 @@ const notifications = [
 ]
 
 interface DetailCardProps {
-  id: number;
+  id: string;
   title: string;
   description: string;
   departure: {
@@ -43,7 +43,7 @@ interface DetailCardProps {
     time: string;
     date: string
   }
-  price: number
+  price: string
   seatsLeft: number
   href: string
 }

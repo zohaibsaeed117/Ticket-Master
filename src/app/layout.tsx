@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from '@/components/Navbar'
+import AuthVerify from '@/components/AuthVerify'
 import { Toaster } from "react-hot-toast"
+
 
 
 const geistSans = localFont({
@@ -41,6 +43,7 @@ export default function RootLayout({
           }}
         />
         <Navbar />
+        <AuthVerify />
         <NextTopLoader
           color="#2299DD"
           showSpinner={false}

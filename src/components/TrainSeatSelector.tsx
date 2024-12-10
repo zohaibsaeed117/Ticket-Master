@@ -16,16 +16,16 @@ import { IconMathGreater, IconMathLower } from '@tabler/icons-react';
 import { Button } from './ui/button';
 interface Seat {
     readonly seatNumber: number;
-    reservedBy: string | null;
+    bookedBy: string | null;
 }
 interface Carriage {
-    id: number;
+    carriageNumber: number;
     name: string;
     price: number;
     seats: Seat[]
 }
 interface SeatSelectorProps {
-    setSelectedSeats: (seatIndex: number, carriageId: number) => void;
+    setSelectedSeats: (seatNumber: number, carriageId: number, index: number) => void;
     selectedSeats: { seatNumber: number, carriageId: number }[]
     carriage: Carriage[]
     setCarriage: (carriage: Carriage[]) => void;
@@ -34,13 +34,14 @@ interface SeatSelectorProps {
 const TrainSeatSelector: React.FC<SeatSelectorProps> = ({ carriage, setCarriage, selectedSeats, handleSeatSelect, setSelectedSeats }) => {
 
     const [index, setIndex] = useState<number>(0)
-    const seats = carriage[index].seats
+    const seats = carriage[index]?.seats
     const carriageLength = carriage?.length;
-    const carriageId = carriage[index].id
+    const carriageId = carriage[index]?.carriageNumber
+    console.log("This is carraige id", carriageId)
 
     const renderItems = seats?.map((seat, index) => (
         <React.Fragment key={seat.seatNumber}>
-            <SeatButton carriageId={carriageId} handleSeatSelect={handleSeatSelect} seatNumber={seat.seatNumber} isReserved={seat.reservedBy} />
+            <SeatButton carriageId={carriageId} handleSeatSelect={handleSeatSelect} seatNumber={seat.seatNumber} isReserved={seat.bookedBy} />
             {/* Insert empty div after every second seat, but not for the last five elements */}
             {((index + 1) % 5 === 3) && <div className="empty-div" />}
         </React.Fragment>

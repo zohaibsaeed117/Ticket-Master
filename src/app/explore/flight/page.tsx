@@ -29,12 +29,37 @@ interface Airport {
     city: string;
     country: string;
 }
+interface Seat {
+    readonly seatNumber: number;
+    bookedBy: string | null;
+    readonly price: number
+    readonly category: string;
+}
+interface FlightInfo {
+    _id:string;
+    title: string;
+    description: string;
+    departure: {
+        city: string;
+        time: string;
+        date: string;
+    };
+    arrival: {
+        city: string;
+        time: string;
+        date: string;
+    };
+    price: number;
+    seatsLeft: number;
+    seats: Seat[];
+}
 const FlightContent = () => {
 
     const [departureCity, setDepartureCity] = useState<string>("");
     const [arrivalCity, setArrivalCity] = useState<string>("");
     const [departureDate, setDepartureDate] = useState<Date>()
     const [isSearched, setSearched] = useState<boolean>(false);
+    const [data, setData] = useState<FlightInfo[]>([]);
 
     const handleDepartureDate = (date: Date | undefined) => {
 
@@ -72,6 +97,7 @@ const FlightContent = () => {
     const [filteredArrivalAirports, setFilteredArrivalAirports] = useState<Airport[]>([]);
     const [departureSearchHideFlag, setDepartureSearchHideFlag] = useState(false);
     const [arrivalSearchHideFlag, setArrivalSearchHideFlag] = useState(false);
+    const [isLoading, setIsLoading] = useState<boolean>(false)
 
     // Debounced function for departureCity
     const debouncedFilterDepartureAirports = useMemo(() =>
@@ -126,31 +152,34 @@ const FlightContent = () => {
             debouncedFilterArrivalAirports.cancel();
         };
     }, [arrivalCity, debouncedFilterArrivalAirports]);
-
-    const renderItems = () => {
-        if (!isSearched) {
-            return []
+    const getData = async () => {
+        setIsLoading(false)
+        try {
+            const token = localStorage.getItem("ticket-master-token");
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/flight/get-flights`, {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${token}`
+                }
+            });
+            const data = await response.json();
+            if (data.success) {
+                setData(data.data);
+                console.log(data)
+            }
+            else {
+                toast.error(data.message);
+            }
+        } catch (error) {
+            console.log(error);
+        } finally {
+            setIsLoading(false)
         }
-
-        return flights
-            .filter(data =>
-                //@ts-ignore
-                data.departure.date === format(departureDate, 'yyyy-MM-dd') ||
-                data.departure.city === departureCity ||
-                data.arrival.city === arrivalCity)
-            .map(data =>
-                <DetailCard
-                    key={data.id}
-                    id={data.id}
-                    title={data.title}
-                    description={data.description}
-                    arrival={data.arrival}
-                    departure={data.departure}
-                    price={data.price}
-                    seatsLeft={data.seatsLeft}
-                    href={'flight/' + data.id}
-                />)
     }
+    useEffect(() => {
+        getData();
+    }, [])
     return (
         <>
             <div className="gradient-background py-10 text-card-foreground w-full lg:px-20 md:px-10 px-4 rounded-sm">
@@ -264,7 +293,7 @@ const FlightContent = () => {
             <div className="flex flex-col mt-10 w-full lg:px-20 md:px-10 ">
 
                 <div className="flex items-center justify-between">
-                    <p className="text-xl"><span className="font-bold">Result Found: </span>{renderItems().length}</p>
+                    <p className="text-xl"><span className="font-bold">Result Found: </span>{data?.length}</p>
                     <DropdownMenu>
                         <DropdownMenuTrigger asChild>
                             <Button
@@ -294,7 +323,19 @@ const FlightContent = () => {
                 {
                     true ?
                         <div className="grid grid-cols-[repeat(auto-fit,minmax(300,auto))] lg:grid-cols-[repeat(auto-fit,minmax(350px,auto))] gap-y-6 my-8">
-                            {renderItems()}
+                            {data?.map(data =>
+                                    <DetailCard
+                                        key={data._id}
+                                        id={data._id}
+                                        title={data.title}
+                                        description={data.description}
+                                        arrival={data.arrival}
+                                        departure={data.departure}
+                                        price={data.price.toString()}
+                                        seatsLeft={data.seatsLeft}
+                                        href={'flight/' + data._id}
+                                    />
+                                )}
                         </div>
                         :
                         <div className="flex flex-col gap-y-10 mt-10 items-center justify-center">

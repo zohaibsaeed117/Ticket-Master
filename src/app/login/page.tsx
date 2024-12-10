@@ -1,15 +1,51 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
 
 export default function Signup() {
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const Router = useRouter();
+    const [email, setEmail] = useState<string>("");
+    const [password, setPassword] = useState<string>("");
+    const [isLoading, setIsLoading] = useState<boolean>(false);
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        console.log("Form submitted");
-    };
+        if (isLoading) return;
+        setIsLoading(true);
+        try {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/login`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    email,
+                    password
+                })
+            });
+            const data = await response.json();
+            if (response.ok) {
+                // Login successful, save the token in localstorage and redirect to the dashboard
+                localStorage.setItem("ticket-master-token", data.token);
+                toast.success("Login successful");
+                Router.push("/explore");
+            } else {
+                // Login failed, show error
+                toast.error(data.message);
+            }
+        } catch (error) {
+            toast.error("Something went wrong");
+            // Catch any other errors
+            console.log(error);
+        } finally {
+            setIsLoading(false);
+        }
+    }
+
     return (
         <div className="min-h-[90vh] w-full bg-black bg-grid-white/[0.2] relative flex items-center justify-center">
             {/* Radial gradient for the container to give a faded look */}
@@ -22,14 +58,33 @@ export default function Signup() {
                 <form className="my-8" onSubmit={handleSubmit}>
                     <LabelInputContainer className="mb-4">
                         <Label htmlFor="email">Email Address</Label>
-                        <Input id="email" placeholder="projectmayhem@fc.com" type="email" />
+                        <Input
+                            id="email"
+                            placeholder="projectmayhem@fc.com"
+                            type="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                            title="Please enter a valid email address"
+                        />
                     </LabelInputContainer>
                     <LabelInputContainer className="mb-4">
                         <Label htmlFor="password">Password</Label>
-                        <Input id="password" placeholder="••••••••" type="password" />
+                        <Input
+                            id="password"
+                            placeholder="••••••••"
+                            type="password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            required
+                            minLength={8}
+                            title="Password should contain at least 8 characters including one uppercase, one lowercase and one number"
+                        />
                     </LabelInputContainer>
 
                     <button
+                        disabled={isLoading}
                         className="bg-gradient-to-br relative group/btn from-zinc-900 to-zinc-900 block bg-zinc-800 w-full text-foreground rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset] group"
                         type="submit"
                     >
@@ -44,7 +99,6 @@ export default function Signup() {
 
     );
 }
-
 const BottomGradient = () => {
     return (
         <>

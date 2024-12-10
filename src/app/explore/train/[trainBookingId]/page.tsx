@@ -19,10 +19,10 @@ interface TrainBookingPageProps {
 }
 interface Seat {
     readonly seatNumber: number;
-    reservedBy: string | null;
+    bookedBy: string | null;
 }
 interface Carriage {
-    id: number;
+    carriageNumber: number;
     name: string;
     price: number;
     seats: Seat[]
@@ -45,6 +45,12 @@ interface TrainDetail {
     readonly carriages: Carriage[]
     readonly price: number
     readonly seatsLeft: number
+    category: {
+        start: number;
+        end: number;
+        name: string;
+        price: number;
+    }[]
 }
 
 const TrainBookingPage: React.FC<TrainBookingPageProps> = ({ params }) => {
@@ -52,24 +58,23 @@ const TrainBookingPage: React.FC<TrainBookingPageProps> = ({ params }) => {
     const [error, setError] = useState<string>();
     const [train, setTrain] = useState<TrainDetail>();
     const [isLoading, setIsLoading] = useState<boolean>(true);
-    const [selectedSeats, setSelectedSeats] = useState<{ seatNumber: number, carriageId: number }[]>([]);
+    const [selectedSeats, setSelectedSeats] = useState<{ seatNumber: number, carriageId: number, index: number, price: number }[]>([]);
     const [carriage, setCarriage] = useState<Carriage[]>([])
     const [carriageIndex, setCarriageIndex] = useState<number>(0);
 
-    const handleSelectedSeatChange = (seatNumber: number, carriageId: number) => {
-        if (selectedSeats.length === 4) {
+    const handleSelectedSeatChange = (seatNumber: number, carriageId: number, index: number) => {
+        if (selectedSeats.length >= 4) {
             return toast.error("You cannot select more than 4 seats");
         }
         if (!carriageId || !seatNumber) {
             return toast.error("Some Error Happened")
         }
-        setSelectedSeats((seats) => [...seats, { seatNumber, carriageId }]);
-        console.log(selectedSeats)
+        setSelectedSeats((seats) => [...seats, { seatNumber, carriageId, index, price: carriage[carriageId - 1].price }]);
     };
+    console.log(selectedSeats)
     const removeSelectedSeat = (seatNumber: number, carriageId: number) => {
         let temp = [...selectedSeats]
         temp = temp.filter(value => value.seatNumber !== seatNumber && value.carriageId !== carriageId - 1)
-        console.log("This is temp", temp)
         setSelectedSeats(temp)
     };
     const handleRemoveSelectedSeat = (seatNumber: number, carriageId: number) => {
@@ -79,7 +84,8 @@ const TrainBookingPage: React.FC<TrainBookingPageProps> = ({ params }) => {
         if (!tempCarriage) {
             return toast.error("Some Error Occured")
         }
-        tempCarriage.seats[seatNumber - 1].reservedBy = null
+        let seatIndex = seatNumber - (tempCarriageIndex > 0 ? temp[tempCarriageIndex - 1].seats.length + 1 : 0)
+        tempCarriage.seats[seatIndex - 1].bookedBy = null
         temp[tempCarriageIndex] = tempCarriage
         setCarriage(temp)
 
@@ -87,29 +93,46 @@ const TrainBookingPage: React.FC<TrainBookingPageProps> = ({ params }) => {
 
     }
     const handleSeatSelect = (seatNumber: number, selectedBy: string, carriageId: number) => {
-        console.log("THis is handle Seat select", carriageId)
+        if (selectedSeats.length >= 4) {
+            return toast.error("You cannot select more than 4 seats");
+        }
         let temp = [...carriage];
         let tempCarriageIndex = carriageId - 1
-        console.log("THis is the index", tempCarriageIndex)
         let tempCarriage = temp[tempCarriageIndex]
         if (!tempCarriage) {
             return toast.error("Some Error Occured")
         }
-        tempCarriage.seats[seatNumber - 1].reservedBy = selectedBy
+        let seatIndex = seatNumber - (tempCarriageIndex > 0 ? temp[tempCarriageIndex - 1].seats.length + 1 : 0)
+        tempCarriage.seats[seatIndex - 1].bookedBy = selectedBy
         temp[tempCarriageIndex] = tempCarriage
-        console.log("Test Test", tempCarriage)
         setCarriage(temp)
-        handleSelectedSeatChange(seatNumber, carriageId)
+        handleSelectedSeatChange(seatNumber, carriageId, seatIndex)
     }
-    const getData = () => {
+
+    const getData = async () => {
         setIsLoading(true)
-        const data = trains?.find(data => data.id.toString() === trainBookingId)
-        if (!data) {
-            return setError("Route Doesn't Exist")
+        try {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/train/get-train/${trainBookingId}`, {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${localStorage.getItem("ticket-master-token")}`,
+                },
+            });
+            const data = await response.json();
+            if (data.success) {
+                setTrain(data.data);
+                setCarriage(data.data.carriage)
+            }
+            else {
+                toast.error(data.message);
+            }
+        } catch (error) {
+            console.log(error)
+            toast.error("Something went wrong")
+        } finally {
+            setIsLoading(false)
         }
-        setTrain(data)
-        setCarriage(data.carriages)
-        setIsLoading(false)
     }
     useEffect(() => {
         getData()
@@ -149,8 +172,6 @@ const TrainBookingPage: React.FC<TrainBookingPageProps> = ({ params }) => {
                                             <h3 className='text-2xl font-semibold'>Seat Status</h3>
                                             <div className="grid grid-cols-2 gap-4 my-2">
                                                 {[
-                                                    { label: "Booked By", person: "Male", color: "blue-500" },
-                                                    { label: "Booked By", person: "Female", color: "pink-500" },
                                                     { label: "Seat", person: "Available", color: "accent-foreground" },
                                                     { label: "Seat", person: "Selected", color: "yellow-500" },
                                                 ].map((seat, index) => (
@@ -183,12 +204,10 @@ const TrainBookingPage: React.FC<TrainBookingPageProps> = ({ params }) => {
                                     </div>
                                     <div className='border rounded-xl p-4 flex flex-col gap-y-4 bg-card '>
                                         <h1 className='text-2xl font-bold'>Seats Arrangments</h1>
-                                        {[{ category: "Silver", range: "(1-10)", price: "1100" },
-                                        { category: "Gold", range: "(20-30)", price: "1500" },
-                                        { category: "Premium", range: "(30-49)", price: "2000" }].map(seat =>
+                                        {train?.category?.map(seat =>
                                             <div className='flex text-xl items-center justify-between border-b-2 py-1'>
                                                 <h1 className='font-semibold'>
-                                                    {seat.category} <span className='font-light'>{seat.range}</span>
+                                                    {seat.name} <span className='font-light'>({seat.start} - {seat.end})</span>
                                                 </h1>
                                                 <span className='font-light'>Rs. {seat.price}</span>
                                             </div>)}
@@ -203,18 +222,14 @@ const TrainBookingPage: React.FC<TrainBookingPageProps> = ({ params }) => {
                                     <h1 className='text-2xl font-semibold'>Train</h1>
                                     <p className='text-xl'>LHE - ISB_26</p>
                                 </div>
-                                <Separator />
-                                <div>
-                                    <p className='text-2xl font-bold'>Subtotal</p>
-                                    <div className='flex items-center justify-between'>
-                                        <p className="text-2xl font-semibold" >Outbound</p>
-                                        <p className="text-2xl">2022</p>
-                                    </div>
+                                <div className="flex items-center justify-between">
+                                    <p className='text-2xl font-bold'>Seats</p>
+                                    <p className="text-2xl">{selectedSeats.length}</p>
                                 </div>
                                 <Separator />
                                 <div className='flex items-center justify-between'>
                                     <p className='text-2xl font-bold'>Total</p>
-                                    <p className='text-2xl'>Rs. 525</p>
+                                    <p className='text-2xl'>Rs. {selectedSeats.reduce((acc, seat) => (acc + seat.price), 0)}</p>
                                 </div>
                             </div>
                             <div className='bg-card p-6 rounded-xl flex flex-col gap-y-4 border'>
@@ -255,7 +270,6 @@ const TrainBookingPage: React.FC<TrainBookingPageProps> = ({ params }) => {
                                     Proceed to Payment
                                     <span className="inline-block transition-transform duration-300 ease-in-out group-hover:translate-x-1">&rarr;</span>
                                 </Button>
-
                             </div>
                         </div>
                     </div >

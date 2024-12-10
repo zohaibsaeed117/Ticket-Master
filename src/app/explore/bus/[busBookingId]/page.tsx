@@ -19,7 +19,7 @@ interface BusBookingPageProps {
 }
 interface Seat {
     readonly seatNumber: number;
-    reservedBy: string | null;
+    bookedBy: string | null;
     readonly price: number
     readonly category: string;
 }
@@ -42,46 +42,76 @@ interface BusDetail {
     readonly price: number
     readonly seatsLeft: number
 }
+interface CategoryPriceRange {
+    start: number;
+    end: number;
+    name: string;
+    price: number;
+}
 
 const BusBookingPage: React.FC<BusBookingPageProps> = ({ params }) => {
     const { busBookingId } = params;
     const [error, setError] = useState<string>();
     const [bus, setBus] = useState<BusDetail>();
-    const [isLoading, setIsLoading] = useState<boolean>(false);
-    const [selectedSeats, setSelectedSeats] = useState<number[]>([]);
+    const [isLoading, setIsLoading] = useState<boolean>(true);
+    const [selectedSeats, setSelectedSeats] = useState<Seat[]>([]);
     const [seats, setSeats] = useState<Seat[]>([])
+    const [category, setCategory] = useState<CategoryPriceRange[]>([])
+    const handleSelectedSeatChange = (seat: Seat) => {
+        if (selectedSeats.length >= 4) {
 
-    const handleSelectedSeatChange = (seatNumber: number) => {
-        if (selectedSeats.length === 4) {
             return toast.error("You cannot select more than 4 seats");
         }
-        setSelectedSeats((seats) => [...seats, seatNumber]);
+        setSelectedSeats((seats) => [...seats, seat]);
     };
+    console.log(selectedSeats)
     const handleRemoveSelectedSeat = (seatNumber: number) => {
-        const tempSeats = selectedSeats.filter(value => value !== seatNumber)
+        const tempSeats = selectedSeats.filter(value => value.seatNumber !== seatNumber)
         setSelectedSeats(tempSeats)
         const temp = seats;
-        temp[seatNumber - 1].reservedBy = null
+        temp[seatNumber - 1].bookedBy = null
         setSeats(temp)
     }
     const handleSeatSelect = (seatIndex: number, selectedBy: string) => {
-        const tempSeats = seats;
-        tempSeats[seatIndex - 1].reservedBy = selectedBy;//Changing the seat at index
-        setSeats(tempSeats)
-        handleSelectedSeatChange(seatIndex)
-    }
-    const getData = () => {
-        const data = buses?.find(data => data.id.toString() === busBookingId)
-        if (!data) {
-            return setError("Route Doesn't Exist")
+        if (selectedSeats.length >= 4) {
+            return toast.error("You cannot select more than 4 seats")
         }
-        setBus(data)
-        setSeats(data?.seats || [])
+        const tempSeats = seats;
+        tempSeats[seatIndex - 1].bookedBy = selectedBy;//Changing the seat at index
+        const seat = tempSeats[seatIndex - 1]
+        setSeats(tempSeats)
+        handleSelectedSeatChange(seat)
     }
-    useEffect(() => { 
+    const getData = async () => {
         setIsLoading(true)
+        try {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/bus/get-bus/${busBookingId}`, {
+                method: "GET",
+                headers: {
+                    "Authorization": `Bearer ${localStorage.getItem("ticket-master-token")}`,
+                    "Content-Type": "application/json",
+                }
+            })
+            const data = await response.json();
+            console.log(data)
+            if (data.success) {
+                setBus(data.data)
+                setSeats(data.data.seats)
+                setCategory(data.data.category)
+            }
+            else {
+                toast.error(data.message)
+            }
+        }
+        catch (error) {
+            console.log(error)
+            toast.error("Something happend")
+        } finally {
+            setIsLoading(false)
+        }
+    }
+    useEffect(() => {
         getData()
-        setIsLoading(false)
     }, [])
     return error ? <h1 className='text-4xl text-center'>{error}</h1> :
         (isLoading ? <Loader />
@@ -118,8 +148,6 @@ const BusBookingPage: React.FC<BusBookingPageProps> = ({ params }) => {
                                             <h3 className='text-2xl font-semibold'>Seat Status</h3>
                                             <div className="grid grid-cols-2 gap-4 my-2">
                                                 {[
-                                                    { label: "Booked By", person: "Male", color: "blue-500" },
-                                                    { label: "Booked By", person: "Female", color: "pink-500" },
                                                     { label: "Seat", person: "Available", color: "accent-foreground" },
                                                     { label: "Seat", person: "Selected", color: "yellow-500" },
                                                 ].map((seat, index) => (
@@ -142,9 +170,9 @@ const BusBookingPage: React.FC<BusBookingPageProps> = ({ params }) => {
                                         <div className='flex items-center justify-center'>
                                             {selectedSeats.length ? selectedSeats.map(value =>
                                                 <div className="relative">
-                                                    <button onClick={() => handleRemoveSelectedSeat(value)} className='absolute h-4 w-4 -top-2 -right-2 bg-primary rounded-full flex items-center justify-center z-10'><X size={10} /></button>
+                                                    <button onClick={() => handleRemoveSelectedSeat(value.seatNumber)} className='absolute h-4 w-4 -top-2 -right-2 bg-primary rounded-full flex items-center justify-center z-10'><X size={10} /></button>
                                                     <div className={`flex items-center justify-center text-xl border h-10 w-10 font-semibold bg-yellow-500 text-white rounded-sm`}>
-                                                        {value}
+                                                        {value.seatNumber}
                                                     </div>
                                                 </div>
                                             ) : <p className='text-xl font-bold'>No Seats Selected</p>}
@@ -152,12 +180,10 @@ const BusBookingPage: React.FC<BusBookingPageProps> = ({ params }) => {
                                     </div>
                                     <div className='border rounded-xl p-4 flex flex-col gap-y-4 bg-card '>
                                         <h1 className='text-2xl font-bold'>Seats Arrangments</h1>
-                                        {[{ category: "Silver", range: "(1-10)", price: "1100" },
-                                        { category: "Gold", range: "(20-30)", price: "1500" },
-                                        { category: "Premium", range: "(30-49)", price: "2000" }].map(seat =>
+                                        {category.map(seat =>
                                             <div className='flex text-xl items-center justify-between border-b-2 py-1'>
                                                 <h1 className='font-semibold'>
-                                                    {seat.category} <span className='font-light'>{seat.range}</span>
+                                                    {seat.name} <span className='font-light'>({seat.start} - {seat.end})</span>
                                                 </h1>
                                                 <span className='font-light'>Rs. {seat.price}</span>
                                             </div>)}
@@ -170,20 +196,17 @@ const BusBookingPage: React.FC<BusBookingPageProps> = ({ params }) => {
                             <div className='bg-card p-6 rounded-xl flex flex-col gap-y-4 border'>
                                 <div>
                                     <h1 className='text-2xl font-semibold'>Bus</h1>
-                                    <p className='text-xl'>LHE - ISB_26</p>
+                                    <p className='text-xl'>{bus?.title}</p>
                                 </div>
                                 <Separator />
-                                <div>
-                                    <p className='text-2xl font-bold'>Subtotal</p>
-                                    <div className='flex items-center justify-between'>
-                                        <p className="text-2xl font-semibold" >Outbound</p>
-                                        <p className="text-2xl">2022</p>
-                                    </div>
+                                <div className="flex items-center justify-between">
+                                    <p className='text-2xl font-bold'>Seats</p>
+                                    <p className="text-2xl">{selectedSeats.length}</p>
                                 </div>
                                 <Separator />
                                 <div className='flex items-center justify-between'>
                                     <p className='text-2xl font-bold'>Total</p>
-                                    <p className='text-2xl'>Rs. 525</p>
+                                    <p className='text-2xl'>Rs. {selectedSeats.reduce((acc, seat) => (acc + seat.price), 0)}</p>
                                 </div>
                             </div>
                             <div className='bg-card p-6 rounded-xl flex flex-col gap-y-4 border'>

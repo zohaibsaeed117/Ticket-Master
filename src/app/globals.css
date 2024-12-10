@@ -57,6 +57,19 @@
   background: var(--gradient)
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* .hide-arrows{
+  -moz-appearance: textfield;
+} */
+.hide-arrows::-webkit-outer-spin-button,
+.hide-arrows::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 @layer base {
   * {
     @apply border-border;
@@ -69,4 +82,21 @@
 
 .bg-about {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) url('/public/about.jpg');
+}
+
+.ql-container {
+  border: 1px solid hsl(var(--border)) !important;
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  /* Force override with !important */
+  background: hsl(var(--background)) !important;
+}
+
+.ql-toolbar {
+  border: 1px solid hsl(var(--border)) !important;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  background: hsl(var(--background)) !important;
+
+  /* Match toolbar border */
 }

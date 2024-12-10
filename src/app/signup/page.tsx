@@ -1,14 +1,70 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import LabelInputContainer from "@/components/ui/LabelInputContainer";
+import toast from "react-hot-toast";
+import Router, { useRouter } from "next/navigation";
+interface User {
+    firstName: string;
+    lastName: string;
+    username: string
+    age: number;
+    email: string;
+    password: string;
+    confirmPassword: string;
+}
 export default function Signup() {
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const router = useRouter();
+    const [user, setUser] = useState<User>({
+        firstName: "",
+        lastName: "",
+        username: "",
+        age: 10,
+        email: "",
+        password: "",
+        confirmPassword: "",
+    });
+    const [isLoading, setIsLoading] = useState<boolean>(false);
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setUser(user => ({
+            ...user,
+            [e.target.id]: e.target.value,
+        }));
+    };
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        console.log("Form submitted");
+        if (user.password !== user.confirmPassword) {
+            toast.error("Passwords do not match");
+            return
+        }
+        try {
+            setIsLoading(true);
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/signup`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(user)
+            });
+            const data = await response.json();
+            if (response.ok) {
+                toast.success("Account created successfully");
+                setTimeout(() => {
+                    router.push("/login")
+                }, 1500);
+            } else {
+                toast.error(data.message);
+            }
+        } catch (error) {
+            toast.error("Something went wrong");
+        } finally {
+            setIsLoading(false);
+        }
     };
     return (
         <div className="min-h-[90vh] w-full bg-black bg-grid-white/[0.2] relative flex items-center justify-center">
@@ -22,32 +78,45 @@ export default function Signup() {
                 <form className="my-8" onSubmit={handleSubmit}>
                     <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
                         <LabelInputContainer>
-                            <Label htmlFor="firstname">First name</Label>
-                            <Input id="firstname" placeholder="Tyler" type="text" />
+                            <Label htmlFor="firstName">First name</Label>
+                            <Input value={user?.firstName} onChange={handleChange} id="firstName" placeholder="Tyler" type="text" required />
                         </LabelInputContainer>
                         <LabelInputContainer>
-                            <Label htmlFor="lastname">Last name</Label>
-                            <Input id="lastname" placeholder="Durden" type="text" />
+                            <Label htmlFor="lastName">Last name</Label>
+                            <Input value={user?.lastName} onChange={handleChange} id="lastName" placeholder="Durden" type="text" required />
+                        </LabelInputContainer>
+                    </div>
+                    <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
+                        <LabelInputContainer>
+                            <Label htmlFor="username">Username</Label>
+                            <Input value={user?.username} onChange={handleChange} id="username" placeholder="Tyler" type="text" required />
+                        </LabelInputContainer>
+                        <LabelInputContainer>
+                            <Label htmlFor="age">Age</Label>
+                            <Input value={user?.age} onChange={handleChange} id="age" placeholder="18" type="number" min={10} max={100} required />
                         </LabelInputContainer>
                     </div>
                     <LabelInputContainer className="mb-4">
                         <Label htmlFor="email">Email Address</Label>
-                        <Input id="email" placeholder="projectmayhem@fc.com" type="email" />
+                        <Input value={user?.email} onChange={handleChange} id="email" placeholder="projectmayhem@fc.com" type="email" required />
                     </LabelInputContainer>
                     <LabelInputContainer className="mb-4">
                         <Label htmlFor="password">Password</Label>
-                        <Input id="password" placeholder="••••••••" type="password" />
+                        <Input value={user?.password} onChange={handleChange} id="password" placeholder="••••••••" type="password" required minLength={8} />
                     </LabelInputContainer>
                     <LabelInputContainer className="mb-8">
                         <Label htmlFor="confirmPassword">Your Confirm password</Label>
-                        <Input
+                        <Input value={user?.confirmPassword} onChange={handleChange}
                             id="confirmPassword"
                             placeholder="••••••••"
-                            type="confirmPassword"
+                            type="password"
+                            required
+                            minLength={8}
                         />
                     </LabelInputContainer>
 
                     <button
+                        disabled={isLoading}
                         className="bg-gradient-to-br relative group/btn from-zinc-900 to-zinc-900 block bg-zinc-800 w-full text-foreground rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset] group"
                         type="submit"
                     >
@@ -71,3 +140,7 @@ const BottomGradient = () => {
         </>
     );
 };
+function asycn(e: any, arg1: any) {
+    throw new Error("Function not implemented.");
+}
+

@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+import React, { useEffect, useState } from 'react'
 import InputGroup from '@/components/InputGroup'
 import { Search, ListFilter } from 'lucide-react'
 import {
@@ -12,9 +13,40 @@ import {
 import { Button } from '@/components/ui/button'
 import { EventCard } from '@/components/EventCard'
 import Image from 'next/image'
+import Loader from '@/components/Loader'
+import toast from 'react-hot-toast'
 
 const EventContent = () => {
-    return (
+    const [isLoading, setIsLoading] = useState(true)
+    const [data, setData] = useState<any[]>([])
+    const getData = async () => {
+        setIsLoading(true)
+        try {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/event/get-events`, {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${localStorage.getItem("ticket-master-token")}`,
+                },
+            })
+            const data = await response.json()
+            if (data.success) {
+                setData(data.data);
+            }
+            else {
+                toast.error("Error: " + data.message)
+            }
+        } catch (error) {
+            toast.error((error as Error).message)
+
+        } finally {
+            setIsLoading(false)
+        }
+    }
+    useEffect(() => {
+        getData();
+    }, [])
+    return isLoading ? <Loader /> : (
         <>
             <div className="gradient-background py-10 text-card-foreground w-full lg:px-20 md:px-10 px-4 rounded-sm flex items-baseline justify-between">
                 <div className='flex flex-col gap-y-2'>
@@ -31,7 +63,7 @@ const EventContent = () => {
                             <Button
                                 variant="outline"
                                 size="sm"
-                                className="h-10 gap-1 text-sm" 
+                                className="h-10 gap-1 text-sm"
                             >
                                 <ListFilter className="h-3.5 w-3.5" />
                                 <span className="sr-only sm:not-sr-only">Location</span>
@@ -59,11 +91,14 @@ const EventContent = () => {
             {
                 true ?
                     <div className="grid grid-cols-[repeat(auto-fit,minmax(300,auto))] lg:grid-cols-[repeat(auto-fit,minmax(380px,auto))] gap-y-6  my-8">
-                        <EventCard />
-                        <EventCard />
-                        <EventCard />
-                        <EventCard />
-                        <EventCard />
+                        {data?.map(data =>
+                            <EventCard
+                                id={data._id}
+                                key={data._id}
+                                title={data.title}
+                                image={data.image}
+                            />
+                        )}
                     </div>
                     :
                     <div className="flex flex-col gap-y-10 mt-10 items-center justify-center">

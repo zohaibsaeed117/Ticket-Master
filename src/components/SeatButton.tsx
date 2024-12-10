@@ -11,36 +11,17 @@ interface SeatButtonProps {
 }
 
 const SeatButton: React.FC<SeatButtonProps> = ({ isReserved, seatNumber, carriageId, handleSeatSelect }) => {
-    const [isOpen, setIsOpen] = useState(false); // Track dropdown open state
+
 
     const setStyle = () => {
-        if (isReserved === "male") return "border-blue-500 bg-blue-500 text-white cursor-not-allowed";
-        else if (isReserved === "female") return "border-pink-500 bg-pink-500 text-white cursor-not-allowed";
-        else return "border-accent-foreground text-accent-foreground";
+        if (isReserved !== null) return "border-yellow-500 bg-yellow-500 text-white cursor-not-allowed";
+        else return "border-accent-foreground text-accent-foreground bg-accent";
     };
     return (
-        <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
-            <DropdownMenuTrigger
-                disabled={isReserved !== null}
-                className={`border h-10 w-10 rounded-t-sm rounded-b-[4px] font-semibold ${setStyle()}`}
-            >
-                {seatNumber}
-            </DropdownMenuTrigger>
-            <DropdownMenuContent className='mx-auto min-w-full'>
-                <Button size={"icon"} variant={"ghost"} onClick={() => {
-                    setIsOpen(false)
-                    handleSeatSelect(seatNumber, "male", carriageId)
-                }}>
-                    <IconMan fill='blue' color='blue' />
-                </Button>
-                <Button size={"icon"} variant={"ghost"} onClick={() => {
-                    setIsOpen(false)
-                    handleSeatSelect(seatNumber, "female", carriageId)
-                }}>
-                    <IconWoman fill='#fd00cb' color='#fd00cb' />
-                </Button>
-            </DropdownMenuContent>
-        </DropdownMenu>
+        <Button
+            disabled={isReserved !== null}
+            onClick={() => handleSeatSelect(seatNumber, "reserverd", carriageId || 0)}
+            className={`border h-10 w-10 rounded-t-sm rounded-b-[4px] font-semibold ${setStyle()}`}>{seatNumber}</Button>
     );
 };
 

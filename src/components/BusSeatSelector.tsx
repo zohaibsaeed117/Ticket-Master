@@ -5,15 +5,15 @@ import { IconSteeringWheel } from '@tabler/icons-react';
 
 interface Seat {
     readonly seatNumber: number;
-    reservedBy: string | null;
+    bookedBy: string | null;
     readonly price: number
     readonly category: string;
 }
 
 
 interface SeatSelectorProps {
-    setSelectedSeats: (open: number) => void;
-    selectedSeats: number[]
+    setSelectedSeats: (open: Seat) => void;
+    selectedSeats: Seat[]
     seats: Seat[]
     setSeats: (seats: Seat[]) => void;
     handleSeatSelect: (seatsIndex: number, seatType: string) => void;
@@ -25,7 +25,7 @@ const BusSeatSelector: React.FC<SeatSelectorProps> = ({ steering, seats, setSeat
 
     const renderItems = seats.map((seat, index) => (
         <React.Fragment key={seat.seatNumber}>
-            <SeatButton handleSeatSelect={handleSeatSelect} seatNumber={seat.seatNumber} isReserved={seat.reservedBy} />
+            <SeatButton handleSeatSelect={handleSeatSelect} seatNumber={seat.seatNumber} isReserved={seat.bookedBy} />
             {/* Insert empty div after every second seat, but not for the last five elements */}
             {((index + 1) % 4 === 2) && (totalSeats - index > 5) && <div className="empty-div" />}
         </React.Fragment>
