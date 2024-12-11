@@ -244,7 +244,7 @@ const BusBookingPage: React.FC<BusBookingPageProps> = ({ params }) => {
                                         type="email"
                                     />
                                 </LabelInputContainer>
-                                <ConfirmPaymentModal />
+                                <ConfirmPaymentModal bookingId={busBookingId} bookingType='bus' requestData={selectedSeats} />
 
                             </div>
                         </div>

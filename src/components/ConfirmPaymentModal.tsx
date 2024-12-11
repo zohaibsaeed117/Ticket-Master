@@ -10,13 +10,19 @@ interface CreditCard {
     expiry: string;
     cvv: string;
 }
-const ConfirmPaymentModal = () => {
+interface ConfirmPaymentModalProps {
+    bookingType: string
+    requestData: any
+    bookingId: any
+}
+const ConfirmPaymentModal: React.FC<ConfirmPaymentModalProps> = ({ bookingType, requestData, bookingId }) => {
     const [creditCard, setCreditCard] = useState<CreditCard>({
         name: "",
         number: "",
         expiry: "",
         cvv: ""
     });
+    const [isLoading, setIsLoading] = useState<boolean>(false);
 
     const handleChange = (e: any) => {
         setCreditCard(creditCard => {
@@ -49,6 +55,32 @@ const ConfirmPaymentModal = () => {
             }
         });
     }
+    const handlePayment = async () => {
+        setIsLoading(true)
+        try {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/booking/book-${bookingType}/${bookingId}`, {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${localStorage.getItem("ticket-master-token")}`,
+                },
+                body: JSON.stringify({
+                    seats: requestData
+                })
+            })
+            const data = await response.json()
+            if (data.success) {
+                toast.success(data.message)
+            }
+            else {
+                toast.error(data.message)
+            }
+        } catch (error) {
+            toast.error(`Error: ${(error as Error).message || "Something went wrong"}`)
+        } finally {
+            setIsLoading(false)
+        }
+    }
     return (
         <Modal>
             <ModalTrigger>
@@ -57,7 +89,7 @@ const ConfirmPaymentModal = () => {
                     <span className="inline-block transition-transform duration-300 ease-in-out group-hover:translate-x-1">&rarr;</span>
                 </Button>
             </ModalTrigger>
-            <ModalBody>
+            <ModalBody className='overflow-y-auto no-scrollbar'>
                 <ModalContent>
                     <CreditCardInput card={creditCard} setCard={handleChange} />
                 </ModalContent>
@@ -67,7 +99,11 @@ const ConfirmPaymentModal = () => {
                         <p className='text-2xl font-bold'>Total</p>
                         <p className='text-2xl font-this'>2025</p>
                     </div>
-                    <Button>Confirm Payment</Button>
+                    <Button disabled={isLoading} onClick={handlePayment}>
+                        {
+                            isLoading ? <div className='spinner'></div> : "Confirm Payment"
+                        }
+                    </Button>
                 </div>
             </ModalBody>
         </Modal>
