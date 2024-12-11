@@ -13,6 +13,7 @@ import movies from "@/data/movies.json"
 import { format, set } from 'date-fns';
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { ButtonGroup, ButtonGroupItem } from '@/components/ui/button-group';
+import ConfirmPaymentModal from '@/components/ConfirmPaymentModal';
 
 interface MovieBookinPageProps {
     params: {
@@ -43,18 +44,18 @@ const MovieBookinPage: React.FC<MovieBookinPageProps> = ({ params }) => {
     const [error, setError] = useState<string>();
     const [movie, setMovie] = useState<MovieDetail>();
     const [isLoading, setIsLoading] = useState<boolean>(true);
-    const [selectedSeats, setSelectedSeats] = useState<{ seatNo: number, price: number }[]>([]);
+    const [selectedSeats, setSelectedSeats] = useState<{ seatNumber: number, price: number, category: string }[]>([]);
     const [seats, setSeats] = useState<Seat[]>([])
     console.log(selectedSeats)
 
-    const handleSelectedSeatChange = (seatNumber: number, price: number) => {
+    const handleSelectedSeatChange = (seatNumber: number, price: number, category: string) => {
         if (selectedSeats.length === 4) {
             return toast.error("You cannot select more than 4 seats");
         }
-        setSelectedSeats((seats) => [...seats, { seatNo: seatNumber, price: price }]);
+        setSelectedSeats((seats) => [...seats, { seatNumber: seatNumber, price: price, category }]);
     };
     const handleRemoveSelectedSeat = (seatNumber: number) => {
-        const tempSeats = selectedSeats.filter(value => value.seatNo !== seatNumber)
+        const tempSeats = selectedSeats.filter(value => value.seatNumber !== seatNumber)
         setSelectedSeats(tempSeats)
         const temp = seats;
         temp[seatNumber - 1].bookedBy = null
@@ -66,8 +67,9 @@ const MovieBookinPage: React.FC<MovieBookinPageProps> = ({ params }) => {
         }
         const tempSeats = seats;
         tempSeats[seatIndex - 1].bookedBy = selectedBy;//Changing the seat at index
+        const category=tempSeats[seatIndex - 1].category
         setSeats(tempSeats)
-        handleSelectedSeatChange(seatIndex, tempSeats[seatIndex - 1].price)
+        handleSelectedSeatChange(seatIndex, tempSeats[seatIndex - 1].price,category)
     }
     const getData = async () => {
         setIsLoading(true)
@@ -148,10 +150,10 @@ const MovieBookinPage: React.FC<MovieBookinPageProps> = ({ params }) => {
                                         <p className="text-sm">  Your selected seats will appear here. You can select a maximum of 4 seats per booking.</p>
                                         <div className='flex items-center justify-center'>
                                             {selectedSeats.length ? selectedSeats?.map(value =>
-                                                <div className="relative" key={value.seatNo}>
-                                                    <button onClick={() => handleRemoveSelectedSeat(value.seatNo)} className='absolute h-4 w-4 -top-2 -right-2 bg-primary rounded-full flex items-center justify-center z-10'><X size={10} /></button>
+                                                <div className="relative" key={value.seatNumber}>
+                                                    <button onClick={() => handleRemoveSelectedSeat(value.seatNumber)} className='absolute h-4 w-4 -top-2 -right-2 bg-primary rounded-full flex items-center justify-center z-10'><X size={10} /></button>
                                                     <div className={`flex items-center justify-center text-xl border h-10 w-10 font-semibold bg-yellow-500 text-white rounded-sm`}>
-                                                        {value.seatNo}
+                                                        {value.seatNumber}
                                                     </div>
                                                 </div>
                                             ) : <p className='text-xl font-bold'>No Seats Selected</p>}
@@ -181,65 +183,26 @@ const MovieBookinPage: React.FC<MovieBookinPageProps> = ({ params }) => {
                                     </div>
                                 </div>
                             </div>
+                            <div className='w-full mt-4 flex gap-y-4 flex-col'>
 
-                        </div>
-                        <div className='w-full lg:w-1/3 flex gap-y-4 flex-col'>
-
-                            <div className='bg-card p-6 rounded-xl flex flex-col gap-y-4 border'>
-                                <div>
-                                    <h1 className='text-2xl font-semibold'>{movie?.title}</h1>
-                                </div>
-                                <Separator />
-                                <div>
-                                    <p className='text-2xl font-bold'>Quantity</p>
-                                    <p>{selectedSeats?.length}</p>
-                                </div>
-                                <Separator />
-                                <div className='flex items-center justify-between'>
-                                    <p className='text-2xl font-bold'>Total</p>
-                                    <p className='text-2xl'>Rs. {selectedSeats?.reduce((acc, seat) => acc + seat?.price, 0)}</p>
+                                <div className='bg-card p-6 rounded-xl flex flex-col gap-y-4 border'>
+                                    <div>
+                                        <h1 className='text-2xl font-semibold'>{movie?.title}</h1>
+                                    </div>
+                                    <Separator />
+                                    <div>
+                                        <p className='text-2xl font-bold'>Quantity</p>
+                                        <p>{selectedSeats?.length}</p>
+                                    </div>
+                                    <Separator />
+                                    <div className='flex items-center justify-between'>
+                                        <p className='text-2xl font-bold'>Total</p>
+                                        <p className='text-2xl'>Rs. {selectedSeats?.reduce((acc, seat) => acc + seat?.price, 0)}</p>
+                                    </div>
+                                    <ConfirmPaymentModal totalPrice={selectedSeats?.reduce((acc, seat) => acc + seat?.price, 0)} requestData={selectedSeats} bookingId={movieBookingId} bookingType={"movie"} />
                                 </div>
                             </div>
-                            <div className='bg-card p-6 rounded-xl flex flex-col gap-y-4 border'>
-                                <p className='text-2xl font-bold'>Passenger Details</p>
-                                <LabelInputContainer className="mb-8">
-                                    <Label htmlFor="full-name">Full Name</Label>
-                                    <Input
-                                        id="full-name"
-                                        placeholder="i.e. John Doe"
-                                        type="text"
-                                    />
-                                </LabelInputContainer>
-                                <LabelInputContainer className="mb-8">
-                                    <Label htmlFor="cnic">CNIC</Label>
-                                    <Input
-                                        id="cnic"
-                                        placeholder="i.e. XXXXX-XXXXXXX-X"
-                                        type="text"
-                                    />
-                                </LabelInputContainer>
-                                <LabelInputContainer className="mb-8">
-                                    <Label htmlFor="phone-number">Phone Number</Label>
-                                    <Input
-                                        id="phone-number"
-                                        placeholder="i.e. +92 300 0000000"
-                                        type="text"
-                                    />
-                                </LabelInputContainer>
-                                <LabelInputContainer className="mb-8">
-                                    <Label htmlFor="email">Email Address</Label>
-                                    <Input
-                                        id="email"
-                                        placeholder="i.e. XXXXX-XXXXXXX-X"
-                                        type="email"
-                                    />
-                                </LabelInputContainer>
-                                <Button className="group/btn group">
-                                    Proceed to Payment
-                                    <span className="inline-block transition-transform duration-300 ease-in-out group-hover:translate-x-1">&rarr;</span>
-                                </Button>
 
-                            </div>
                         </div>
                     </div >
                 </>

@@ -11,6 +11,7 @@ import Counter from "@/components/Counter";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import Loader from "@/components/Loader";
+import ConfirmPaymentModal from "@/components/ConfirmPaymentModal";
 
 interface EventBookingPageProps {
     params: {
@@ -72,12 +73,12 @@ const EventBookingPage: React.FC<EventBookingPageProps> = ({ params }) => {
     return isLoading ? <Loader /> : (
         <>
             <h1 className="my-4 text-2xl text-center md:text-2xl lg:text-4xl font-bold">{data?.title}</h1>
-            <div className="flex p-6 rounded-xl gap-4 flex-row">
-                <div className="flex items-center flex-col">
+            <div className="flex p-6 rounded-xl gap-4 flex-row w-full">
+                <div className="flex items-center flex-col w-full">
                     <div className="rounded-lg overflow-hidden my-2">
                         {data.image && <Image src={data.image} alt={data?.title} height={1080} width={1080} className="hover:scale-110 transition-transform duration-500" />}
                     </div>
-                    <div className="bg-card p-6 rounded-xl border">
+                    <div className="bg-card lg:w-1/2 w-full p-6 rounded-xl border">
                         <h4 className="text-2xl font-bold">Event Details</h4>
                         <div className="prose mx-4 mt-2 text-xl font-light" dangerouslySetInnerHTML={{ __html: data?.description as string }} />
                     </div>
@@ -91,57 +92,14 @@ const EventBookingPage: React.FC<EventBookingPageProps> = ({ params }) => {
                         </div>
                         <div className="border-t-2 border-b-2 py-4 flex items-center justify-between">
                             <p className='text-2xl font-bold'>Quantity</p>
-                            <Counter count={count} setCount={setCount} />
+                            <Counter count={count} setCount={setCount} max={4} />
                         </div>
                         <Separator />
                         <div className='flex items-center justify-between'>
                             <p className='text-2xl font-bold'>Total</p>
                             <p className='text-2xl'>Rs. {price * count}</p>
                         </div>
-                    </div>
-                    <div className='w-full my-4 bg-card p-6 rounded-xl flex flex-col gap-y-4 border'>
-                        <p className='text-2xl font-bold'>Customer Details</p>
-                        <div className="flex gap-x-8">
-                            <LabelInputContainer className="mb-8">
-                                <Label htmlFor="full-name">Full Name</Label>
-                                <Input
-                                    id="full-name"
-                                    placeholder="i.e. John Doe"
-                                    type="text"
-                                />
-                            </LabelInputContainer>
-                            <LabelInputContainer className="mb-8">
-                                <Label htmlFor="cnic">CNIC</Label>
-                                <Input
-                                    id="cnic"
-                                    placeholder="i.e. XXXXX-XXXXXXX-X"
-                                    type="text"
-                                />
-                            </LabelInputContainer>
-                        </div>
-                        <div className="flex gap-x-8">
-                            <LabelInputContainer className="mb-8">
-                                <Label htmlFor="phone-number">Phone Number</Label>
-                                <Input
-                                    id="phone-number"
-                                    placeholder="i.e. +92 300 0000000"
-                                    type="text"
-                                />
-                            </LabelInputContainer>
-                            <LabelInputContainer className="mb-8">
-                                <Label htmlFor="email">Email Address</Label>
-                                <Input
-                                    id="email"
-                                    placeholder="i.e. XXXXX-XXXXXXX-X"
-                                    type="email"
-                                />
-                            </LabelInputContainer>
-                        </div>
-                        <Button className="group/btn group">
-                            Proceed to Payment
-                            <span className="inline-block transition-transform duration-300 ease-in-out group-hover:translate-x-1">&rarr;</span>
-                        </Button>
-
+                        <ConfirmPaymentModal totalPrice={price * count} bookingType="Event" requestData={count} bookingId={eventBookingId} />
                     </div>
                 </div>
             </div>

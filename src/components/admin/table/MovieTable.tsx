@@ -14,7 +14,7 @@ interface MovieData {
     price: number;
     date: string;
     time: string;
-    rating:string;
+    rating: string;
     image: string | null;
 }
 const MovieTable = () => {
@@ -38,7 +38,7 @@ const MovieTable = () => {
             setIsLoading(false);
         }
     };
-
+    console.log(movies)
     useEffect(() => {
         getData();
     }, []);
