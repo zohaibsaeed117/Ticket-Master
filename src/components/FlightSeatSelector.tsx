@@ -11,8 +11,8 @@ interface Seat {
 }
 
 interface SeatSelectorProps {
-  setSelectedSeats: (open: number, price: number) => void;
-  selectedSeats: { seatNumber: number; price: number }[];
+  setSelectedSeats: (open: number, price: number, category: string) => void;
+  selectedSeats: { seatNumber: number; price: number, category: string }[];
   seats: Seat[];
   setSeats: (seats: Seat[]) => void;
   handleSeatSelect: (seatsIndex: number, seatType: string, price: number) => void;

@@ -191,61 +191,25 @@ const BusBookingPage: React.FC<BusBookingPageProps> = ({ params }) => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className='w-full lg:w-1/3 flex gap-y-4 flex-col'>
+                            <div className=' mt-4 w-full flex gap-y-4 flex-col'>
 
-                            <div className='bg-card p-6 rounded-xl flex flex-col gap-y-4 border'>
-                                <div>
-                                    <h1 className='text-2xl font-semibold'>Bus</h1>
-                                    <p className='text-xl'>{bus?.title}</p>
+                                <div className='bg-card p-6 rounded-xl flex flex-col gap-y-4 border'>
+                                    <div>
+                                        <h1 className='text-2xl font-semibold'>Bus</h1>
+                                        <p className='text-xl'>{bus?.title}</p>
+                                    </div>
+                                    <Separator />
+                                    <div className="flex items-center justify-between">
+                                        <p className='text-2xl font-bold'>Seats</p>
+                                        <p className="text-2xl">{selectedSeats.length}</p>
+                                    </div>
+                                    <Separator />
+                                    <div className='flex items-center justify-between'>
+                                        <p className='text-2xl font-bold'>Total</p>
+                                        <p className='text-2xl'>Rs. {selectedSeats.reduce((acc, seat) => (acc + seat.price), 0)}</p>
+                                    </div>
+                                    <ConfirmPaymentModal totalPrice={selectedSeats.reduce((acc, seat) => (acc + seat.price), 0)} bookingId={busBookingId} bookingType='bus' requestData={selectedSeats} />
                                 </div>
-                                <Separator />
-                                <div className="flex items-center justify-between">
-                                    <p className='text-2xl font-bold'>Seats</p>
-                                    <p className="text-2xl">{selectedSeats.length}</p>
-                                </div>
-                                <Separator />
-                                <div className='flex items-center justify-between'>
-                                    <p className='text-2xl font-bold'>Total</p>
-                                    <p className='text-2xl'>Rs. {selectedSeats.reduce((acc, seat) => (acc + seat.price), 0)}</p>
-                                </div>
-                            </div>
-                            <div className='bg-card p-6 rounded-xl flex flex-col gap-y-4 border'>
-                                <p className='text-2xl font-bold'>Passenger Details</p>
-                                <LabelInputContainer className="mb-8">
-                                    <Label htmlFor="full-name">Full Name</Label>
-                                    <Input
-                                        id="full-name"
-                                        placeholder="i.e. John Doe"
-                                        type="text"
-                                    />
-                                </LabelInputContainer>
-                                <LabelInputContainer className="mb-8">
-                                    <Label htmlFor="cnic">CNIC</Label>
-                                    <Input
-                                        id="cnic"
-                                        placeholder="i.e. XXXXX-XXXXXXX-X"
-                                        type="text"
-                                    />
-                                </LabelInputContainer>
-                                <LabelInputContainer className="mb-8">
-                                    <Label htmlFor="phone-number">Phone Number</Label>
-                                    <Input
-                                        id="phone-number"
-                                        placeholder="i.e. +92 300 0000000"
-                                        type="text"
-                                    />
-                                </LabelInputContainer>
-                                <LabelInputContainer className="mb-8">
-                                    <Label htmlFor="email">Email Address</Label>
-                                    <Input
-                                        id="email"
-                                        placeholder="i.e. XXXXX-XXXXXXX-X"
-                                        type="email"
-                                    />
-                                </LabelInputContainer>
-                                <ConfirmPaymentModal bookingId={busBookingId} bookingType='bus' requestData={selectedSeats} />
-
                             </div>
                         </div>
                     </div >

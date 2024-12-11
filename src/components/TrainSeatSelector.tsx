@@ -25,8 +25,8 @@ interface Carriage {
     seats: Seat[]
 }
 interface SeatSelectorProps {
-    setSelectedSeats: (seatNumber: number, carriageId: number, index: number) => void;
-    selectedSeats: { seatNumber: number, carriageId: number }[]
+    setSelectedSeats: (seatNumber: number, carriageId: number, index: number, category: string) => void;
+    selectedSeats: { seatNumber: number, carriageId: number, category: string }[]
     carriage: Carriage[]
     setCarriage: (carriage: Carriage[]) => void;
     handleSeatSelect: (seatsIndex: number, seatType: string, carriageId: number) => void;

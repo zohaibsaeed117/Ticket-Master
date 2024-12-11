@@ -11,6 +11,7 @@ import { Button } from '@/components/ui/button';
 import Loader from '@/components/Loader';
 import trains from "@/data/trains.json"
 import { format } from 'date-fns';
+import ConfirmPaymentModal from '@/components/ConfirmPaymentModal';
 
 interface TrainBookingPageProps {
     params: {
@@ -58,18 +59,18 @@ const TrainBookingPage: React.FC<TrainBookingPageProps> = ({ params }) => {
     const [error, setError] = useState<string>();
     const [train, setTrain] = useState<TrainDetail>();
     const [isLoading, setIsLoading] = useState<boolean>(true);
-    const [selectedSeats, setSelectedSeats] = useState<{ seatNumber: number, carriageId: number, index: number, price: number }[]>([]);
+    const [selectedSeats, setSelectedSeats] = useState<{ seatNumber: number, carriageId: number, index: number, price: number, category: string }[]>([]);
     const [carriage, setCarriage] = useState<Carriage[]>([])
     const [carriageIndex, setCarriageIndex] = useState<number>(0);
 
-    const handleSelectedSeatChange = (seatNumber: number, carriageId: number, index: number) => {
+    const handleSelectedSeatChange = (seatNumber: number, carriageId: number, index: number, category: string) => {
         if (selectedSeats.length >= 4) {
             return toast.error("You cannot select more than 4 seats");
         }
         if (!carriageId || !seatNumber) {
             return toast.error("Some Error Happened")
         }
-        setSelectedSeats((seats) => [...seats, { seatNumber, carriageId, index, price: carriage[carriageId - 1].price }]);
+        setSelectedSeats((seats) => [...seats, { seatNumber, carriageId, index, price: carriage[carriageId - 1].price, category: category }]);
     };
     console.log(selectedSeats)
     const removeSelectedSeat = (seatNumber: number, carriageId: number) => {
@@ -105,8 +106,9 @@ const TrainBookingPage: React.FC<TrainBookingPageProps> = ({ params }) => {
         let seatIndex = seatNumber - (tempCarriageIndex > 0 ? temp[tempCarriageIndex - 1].seats.length + 1 : 0)
         tempCarriage.seats[seatIndex - 1].bookedBy = selectedBy
         temp[tempCarriageIndex] = tempCarriage
+        const category = tempCarriage.name;
         setCarriage(temp)
-        handleSelectedSeatChange(seatNumber, carriageId, seatIndex)
+        handleSelectedSeatChange(seatNumber, carriageId, seatIndex, category)
     }
 
     const getData = async () => {
@@ -212,64 +214,26 @@ const TrainBookingPage: React.FC<TrainBookingPageProps> = ({ params }) => {
                                                 <span className='font-light'>Rs. {seat.price}</span>
                                             </div>)}
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='w-full lg:w-1/3 flex gap-y-4 flex-col'>
+                                    <div className='w-full flex gap-y-4 flex-col'>
 
-                            <div className='bg-card p-6 rounded-xl flex flex-col gap-y-4 border'>
-                                <div>
-                                    <h1 className='text-2xl font-semibold'>Train</h1>
-                                    <p className='text-xl'>LHE - ISB_26</p>
+                                        <div className='bg-card p-6 rounded-xl flex flex-col gap-y-4 border'>
+                                            <div>
+                                                <h1 className='text-2xl font-semibold'>Train</h1>
+                                                <p className='text-xl'>LHE - ISB_26</p>
+                                            </div>
+                                            <div className="flex items-center justify-between">
+                                                <p className='text-2xl font-bold'>Seats</p>
+                                                <p className="text-2xl">{selectedSeats.length}</p>
+                                            </div>
+                                            <Separator />
+                                            <div className='flex items-center justify-between'>
+                                                <p className='text-2xl font-bold'>Total</p>
+                                                <p className='text-2xl'>Rs. {selectedSeats.reduce((acc, seat) => (acc + Number(seat?.price)), 0)}</p>
+                                            </div>
+                                            <ConfirmPaymentModal totalPrice={selectedSeats.reduce((acc, seat) => (acc + Number(seat?.price)), 0)} bookingId={trainBookingId} requestData={selectedSeats} bookingType="train" />
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="flex items-center justify-between">
-                                    <p className='text-2xl font-bold'>Seats</p>
-                                    <p className="text-2xl">{selectedSeats.length}</p>
-                                </div>
-                                <Separator />
-                                <div className='flex items-center justify-between'>
-                                    <p className='text-2xl font-bold'>Total</p>
-                                    <p className='text-2xl'>Rs. {selectedSeats.reduce((acc, seat) => (acc + seat.price), 0)}</p>
-                                </div>
-                            </div>
-                            <div className='bg-card p-6 rounded-xl flex flex-col gap-y-4 border'>
-                                <p className='text-2xl font-bold'>Passenger Details</p>
-                                <LabelInputContainer className="mb-8">
-                                    <Label htmlFor="full-name">Full Name</Label>
-                                    <Input
-                                        id="full-name"
-                                        placeholder="i.e. John Doe"
-                                        type="text"
-                                    />
-                                </LabelInputContainer>
-                                <LabelInputContainer className="mb-8">
-                                    <Label htmlFor="cnic">CNIC</Label>
-                                    <Input
-                                        id="cnic"
-                                        placeholder="i.e. XXXXX-XXXXXXX-X"
-                                        type="text"
-                                    />
-                                </LabelInputContainer>
-                                <LabelInputContainer className="mb-8">
-                                    <Label htmlFor="phone-number">Phone Number</Label>
-                                    <Input
-                                        id="phone-number"
-                                        placeholder="i.e. +92 300 0000000"
-                                        type="text"
-                                    />
-                                </LabelInputContainer>
-                                <LabelInputContainer className="mb-8">
-                                    <Label htmlFor="email">Email Address</Label>
-                                    <Input
-                                        id="email"
-                                        placeholder="i.e. XXXXX-XXXXXXX-X"
-                                        type="email"
-                                    />
-                                </LabelInputContainer>
-                                <Button className="group/btn group">
-                                    Proceed to Payment
-                                    <span className="inline-block transition-transform duration-300 ease-in-out group-hover:translate-x-1">&rarr;</span>
-                                </Button>
                             </div>
                         </div>
                     </div >

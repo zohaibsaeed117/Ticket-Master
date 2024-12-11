@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Modal, ModalTrigger, ModalBody, ModalContent, ModalFooter } from './ui/animated-modal'
 import CreditCardInput from './CreditCardInput'
-import { Button } from './ui/button'
+import { Button, buttonVariants } from './ui/button'
 import { toast } from 'react-hot-toast';
 
 interface CreditCard {
@@ -14,8 +14,9 @@ interface ConfirmPaymentModalProps {
     bookingType: string
     requestData: any
     bookingId: any
+    totalPrice: number
 }
-const ConfirmPaymentModal: React.FC<ConfirmPaymentModalProps> = ({ bookingType, requestData, bookingId }) => {
+const ConfirmPaymentModal: React.FC<ConfirmPaymentModalProps> = ({ bookingType, requestData, bookingId, totalPrice }) => {
     const [creditCard, setCreditCard] = useState<CreditCard>({
         name: "",
         number: "",
@@ -56,6 +57,7 @@ const ConfirmPaymentModal: React.FC<ConfirmPaymentModalProps> = ({ bookingType, 
         });
     }
     const handlePayment = async () => {
+        if (!creditCard.number || !creditCard.cvv || !creditCard.expiry) return toast.error("Please fill all the fields of Credit Card")
         setIsLoading(true)
         try {
             const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/booking/book-${bookingType}/${bookingId}`, {
@@ -65,7 +67,8 @@ const ConfirmPaymentModal: React.FC<ConfirmPaymentModalProps> = ({ bookingType, 
                     Authorization: `Bearer ${localStorage.getItem("ticket-master-token")}`,
                 },
                 body: JSON.stringify({
-                    seats: requestData
+                    seats: requestData,
+                    price: totalPrice
                 })
             })
             const data = await response.json()
@@ -76,18 +79,25 @@ const ConfirmPaymentModal: React.FC<ConfirmPaymentModalProps> = ({ bookingType, 
                 toast.error(data.message)
             }
         } catch (error) {
-            toast.error(`Error: ${(error as Error).message || "Something went wrong"}`)
+            return toast.error(`Error: ${(error as Error).message || "Something went wrong"}`)
         } finally {
             setIsLoading(false)
         }
+        // setCreditCard({
+        //     number: "",
+        //     name: "",
+        //     expiry: "",
+        //     cvv: ""
+        // })
+
     }
     return (
         <Modal>
-            <ModalTrigger>
-                <Button className="group/btn group">
+            <ModalTrigger disabled={requestData <= 0}>
+                <div className={`${buttonVariants({ variant: "default" })} group/btn group  w-full `}>
                     Proceed to Payment
                     <span className="inline-block transition-transform duration-300 ease-in-out group-hover:translate-x-1">&rarr;</span>
-                </Button>
+                </div>
             </ModalTrigger>
             <ModalBody className='overflow-y-auto no-scrollbar'>
                 <ModalContent>
@@ -97,7 +107,7 @@ const ConfirmPaymentModal: React.FC<ConfirmPaymentModalProps> = ({ bookingType, 
                 <div className='p-10 flex flex-col gap-y-8'>
                     <div className='flex justify-between items-center'>
                         <p className='text-2xl font-bold'>Total</p>
-                        <p className='text-2xl font-this'>2025</p>
+                        <p className='text-2xl font-this'>{totalPrice}</p>
                     </div>
                     <Button disabled={isLoading} onClick={handlePayment}>
                         {

@@ -42,15 +42,18 @@ export function Modal({ children }: { children: ReactNode }) {
 export const ModalTrigger = ({
   children,
   className,
+  disabled
 }: {
   children: ReactNode;
   className?: string;
+  disabled?: boolean
 }) => {
   const { setOpen } = useModal();
   return (
     <button
+      disabled={disabled}
       className={cn(
-        "px-4 py-2 rounded-md text-black dark:text-white text-center relative overflow-hidden",
+        "w-full px-4 py-2 rounded-md text-black dark:text-white text-center relative overflow-hidden disabled:cursor-not-allowed disabled:opacity-50",
         className
       )}
       onClick={() => setOpen(true)}
