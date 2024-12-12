@@ -14,7 +14,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const pathname = usePathname();
   const { isAuthorized } = useUserStore();
+  useEffect(() => {
 
+  }, [isAuthorized])
   return !pathname.includes("admin") && (
     <>
       <div className='bg-background text-foreground flex w-full justify-between font-roboto shadow-md max-lg:flex-row-reverse'>

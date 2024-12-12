@@ -7,8 +7,10 @@ import {
     LogOut,
     Mail,
     MessageSquare,
+    PersonStandingIcon,
     Plus,
     PlusCircle,
+    Router,
     Settings,
     User,
     UserPlus,
@@ -33,19 +35,28 @@ import {
 
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar'
 import Link from "next/link"
+import { useRouter } from "next/navigation"
+import { useUserStore } from "@/store/Store"
 
 interface AvatarDropDownProps {
     userName: String | ""
 }
 
 export function AvatarDropDown({ userName }: AvatarDropDownProps) {
-
+    const router = useRouter()
+    const { setUser } = useUserStore()
+    const handleLogout = () => {
+        localStorage.removeItem("ticket-master-token")
+        setUser({})
+        localStorage.removeItem("ticket-master-isAdmin")
+        router.push('/login')
+    }
     return (
         <DropdownMenu >
             <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon">
                     <Avatar>
-                        <AvatarImage src="https://github.com/zohaibsaeed117.png" />
+                        <AvatarImage src="https://github.com/zohaibsaeed117" />
                         <AvatarFallback>ZS</AvatarFallback>
                     </Avatar>
                 </Button>
@@ -60,6 +71,12 @@ export function AvatarDropDown({ userName }: AvatarDropDownProps) {
                             <span>My Bookings</span>
                         </Link>
                     </DropdownMenuItem>
+                    {localStorage.getItem("ticket-master-isAdmin") === "true" && <DropdownMenuItem>
+                        <Link href="/admin" className="flex items-center justify-between">
+                            <PersonStandingIcon className="mr-2 h-4 w-4" />
+                            <span>Admin</span>
+                        </Link>
+                    </DropdownMenuItem>}
                     {/* <DropdownMenuItem>
                         <Link href="/profile/settings" className="flex items-center justify-between">
                             <Settings className="mr-2 h-4 w-4" />
@@ -69,7 +86,7 @@ export function AvatarDropDown({ userName }: AvatarDropDownProps) {
                 </DropdownMenuGroup>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem>
-                    <Button className="flex items-center justify-between">
+                    <Button onClick={handleLogout} className="flex items-center justify-between">
                         <LogOut className="mr-2 h-4 w-4" />
                         <span>Log out</span>
                     </Button>

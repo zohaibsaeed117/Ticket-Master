@@ -5,7 +5,7 @@ import React, { useEffect } from 'react'
 
 const AuthVerify = () => {
     const Router = useRouter();
-    const { isAuthorized, setIsAuthorized } = useUserStore();
+    const { setUser, setIsAuthorized } = useUserStore();
     const authorizeUser = async () => {
         try {
             const token = localStorage.getItem('ticket-master-token');
@@ -23,6 +23,7 @@ const AuthVerify = () => {
             }
             const data = await res.json();
             setIsAuthorized(data.success)
+            setUser(data.user)
         } catch (error) {
             Router.replace('/login');
             console.error('Error authorizing user:', error);

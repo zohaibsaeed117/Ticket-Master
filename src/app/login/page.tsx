@@ -28,9 +28,12 @@ export default function Signup() {
                 })
             });
             const data = await response.json();
+            console.log(data)
             if (response.ok) {
                 // Login successful, save the token in localstorage and redirect to the dashboard
                 localStorage.setItem("ticket-master-token", data.token);
+                console.log("The user is a admin", data.user)
+                localStorage.setItem("ticket-master-isAdmin", JSON.stringify(data.user.isAdmin));
                 toast.success("Login successful");
                 Router.push("/explore");
             } else {

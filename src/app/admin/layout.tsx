@@ -13,6 +13,8 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import AdminVerify from "@/components/AdminVerify";
+import { redirect } from "next/navigation";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
     const links = [
@@ -45,40 +47,48 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         // },
     ];
     const [open, setOpen] = useState(false);
+    console.log("This is user", localStorage.getItem("ticket-master-isAdmin"))
+    if (localStorage.getItem("ticket-master-isAdmin") !== "true") {
+        redirect("not-found")
+        // return
+    }
     return (
-        <div
-            className={cn(
-                "rounded-md flex flex-col md:flex-row bg-background w-full flex-1 max-w-screen mx-auto border border-border",
-                "h-screen"
-            )}
-        >
-            {/* Sidebar wrapper with responsiveness */}
-            <div className={cn("md:block", open ? "block" : "hidden md:block")}>
-                <Sidebar open={open} setOpen={setOpen}>
-                    <SidebarBody className="justify-between gap-10">
-                        <div className="flex flex-col overflow-y-auto overflow-x-hidden">
-                            {open ? <Logo /> : <LogoIcon />}
-                            <div className="mt-8 flex flex-col gap-2">
-                                {links.map((link, idx) => (
-                                    <SidebarLink key={idx} link={link} />
-                                ))}
+        <>
+            <AdminVerify />
+            <div
+                className={cn(
+                    "rounded-md flex flex-col md:flex-row bg-background w-full flex-1 max-w-screen mx-auto border border-border",
+                    "h-screen"
+                )}
+            >
+                {/* Sidebar wrapper with responsiveness */}
+                <div className={cn("md:block", open ? "block" : "hidden md:block")}>
+                    <Sidebar open={open} setOpen={setOpen}>
+                        <SidebarBody className="justify-between gap-10">
+                            <div className="flex flex-col overflow-y-auto overflow-x-hidden">
+                                {open ? <Logo /> : <LogoIcon />}
+                                <div className="mt-8 flex flex-col gap-2">
+                                    {links.map((link, idx) => (
+                                        <SidebarLink key={idx} link={link} />
+                                    ))}
+                                </div>
                             </div>
-                        </div>
-                    </SidebarBody>
-                </Sidebar>
-            </div>
+                        </SidebarBody>
+                    </Sidebar>
+                </div>
 
-            {/* Content area */}
-            <div className="flex-1 overflow-y-auto overflow-x-hidden w-full">
-                <Button size={'icon'} variant={"ghost"}
-                    onClick={() => setOpen(!open)}
-                    className="block md:hidden"
-                >
-                    {<Menu />}
-                </Button>
-                {children}
+                {/* Content area */}
+                <div className="flex-1 overflow-y-auto overflow-x-hidden w-full">
+                    <Button size={'icon'} variant={"ghost"}
+                        onClick={() => setOpen(!open)}
+                        className="block md:hidden"
+                    >
+                        {<Menu />}
+                    </Button>
+                    {children}
+                </div>
             </div>
-        </div>
+        </>
     );
 }
 
@@ -97,6 +107,7 @@ export const Logo = () => {
                 Ticket Master
             </motion.span>
         </Link>
+
     );
 };
 

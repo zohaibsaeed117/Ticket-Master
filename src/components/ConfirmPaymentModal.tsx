@@ -3,6 +3,7 @@ import { Modal, ModalTrigger, ModalBody, ModalContent, ModalFooter } from './ui/
 import CreditCardInput from './CreditCardInput'
 import { Button, buttonVariants } from './ui/button'
 import { toast } from 'react-hot-toast';
+import { useRouter } from 'next/navigation';
 
 interface CreditCard {
     name: string;
@@ -17,6 +18,7 @@ interface ConfirmPaymentModalProps {
     totalPrice: number
 }
 const ConfirmPaymentModal: React.FC<ConfirmPaymentModalProps> = ({ bookingType, requestData, bookingId, totalPrice }) => {
+    const router = useRouter();
     const [creditCard, setCreditCard] = useState<CreditCard>({
         name: "",
         number: "",
@@ -73,7 +75,7 @@ const ConfirmPaymentModal: React.FC<ConfirmPaymentModalProps> = ({ bookingType, 
             })
             const data = await response.json()
             if (data.success) {
-                toast.success(data.message)
+                toast.success(data.message, { id: "booking", duration: 2000 })
             }
             else {
                 toast.error(data.message)
@@ -83,13 +85,17 @@ const ConfirmPaymentModal: React.FC<ConfirmPaymentModalProps> = ({ bookingType, 
         } finally {
             setIsLoading(false)
         }
-        // setCreditCard({
-        //     number: "",
-        //     name: "",
-        //     expiry: "",
-        //     cvv: ""
-        // })
-
+        setCreditCard({
+            number: "",
+            name: "",
+            expiry: "",
+            cvv: ""
+        })
+        toast.loading("Redirecting to your bookings", { id: "booking" })
+        setTimeout(() => {
+            router.push("/my-bookings")
+            toast.dismiss("booking")
+        }, 3000)
     }
     return (
         <Modal>
