@@ -48,9 +48,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     ];
     const [open, setOpen] = useState(false);
     console.log("This is user", localStorage.getItem("ticket-master-isAdmin"))
-    if (localStorage.getItem("ticket-master-isAdmin") !== "true") {
-        redirect("not-found")
-        // return
+    if (typeof Window !== "undefined") {
+        if (localStorage.getItem("ticket-master-isAdmin") !== "true") {
+            redirect("/error")
+        }
     }
     return (
         <>
