@@ -1,4 +1,4 @@
-import { useRouter } from 'next/navigation'
+import { redirect, useRouter } from 'next/navigation'
 import React from 'react'
 
 const AdminVerify = () => {
@@ -6,8 +6,7 @@ const AdminVerify = () => {
     const router = useRouter();
     console.log("This is user", localStorage.getItem("ticket-master-isAdmin"))
     if (localStorage.getItem("ticket-master-isAdmin") !== "true") {
-        router.push('/error')
-        return
+        redirect("/error");
     }
     return (
         <div>
