@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from './ui/dropdown-menu';
 import { IconMan, IconWoman } from '@tabler/icons-react';

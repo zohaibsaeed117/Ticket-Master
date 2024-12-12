@@ -55,17 +55,17 @@ export function AvatarDropDown({ userName }: AvatarDropDownProps) {
                 <DropdownMenuSeparator />
                 <DropdownMenuGroup>
                     <DropdownMenuItem>
-                        <Link href={`/profile/${userName}`} className="flex items-center justify-between">
+                        <Link href={`/my-bookings`} className="flex items-center justify-between">
                             <User className="mr-2 h-4 w-4" />
-                            <span>Profile</span>
+                            <span>My Bookings</span>
                         </Link>
                     </DropdownMenuItem>
-                    <DropdownMenuItem>
+                    {/* <DropdownMenuItem>
                         <Link href="/profile/settings" className="flex items-center justify-between">
                             <Settings className="mr-2 h-4 w-4" />
                             <span>Settings</span>
                         </Link>
-                    </DropdownMenuItem>
+                    </DropdownMenuItem> */}
                 </DropdownMenuGroup>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem>
