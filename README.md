@@ -68,6 +68,9 @@ Follow these steps to set up the project locally:
 
     Open your browser and navigate to `http://localhost:3000` to view the application.
 
+5. **Backend**
+    For backend visit this https://github.com/zohaibsaeed117/Ticket-Master-Server
+
 ## Usage
 
 ### Basic Usage
